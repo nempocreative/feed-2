@@ -159,6 +159,7 @@
   --ggnl-card: color-mix(in srgb, #ffffff 94%, transparent);
   --ggnl-card-shadow: 0 1.4cqw 3.6cqw color-mix(in srgb, #5a0f36 26%, transparent);
   --ggnl-gold: #d4a63c;
+  --ggnl-wash: linear-gradient(180deg, color-mix(in srgb, var(--ggnl-paper) 100%, transparent) 0%, color-mix(in srgb, var(--ggnl-paper) 100%, transparent) 27%, color-mix(in srgb, var(--ggnl-paper) 86%, transparent) 36%, color-mix(in srgb, var(--ggnl-paper) 0%, transparent) 50%);
 }
 .gg11-root {
   --gg11-sky: #bcd9f3;
