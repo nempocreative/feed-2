@@ -1,6 +1,5 @@
-import { useEffect, useRef, type RefObject } from 'react';
-import poster from '@/assets/ggs-men-perm-real-barber.jpg';
-import clip from '@/assets/ggs-men-perm-real-barber.mp4.asset.json';
+import type { RefObject } from 'react';
+import photo from '@/assets/ggs-men-perm-chair.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import { formatRupiah, GGS_MEN_PERM_PROMO } from './ggs-men-perm-promo';
 import './GgsMenPermPromoSlide.css';
@@ -8,12 +7,8 @@ import './GgsMenPermPromoSlide.css';
 const { kicker, service, subtitle, price } = GGS_MEN_PERM_PROMO;
 const [rp, amount] = [formatRupiah(price).slice(0, 2), formatRupiah(price).slice(2)];
 
-/** GGS Cowok slide 5: perm promo over a looping clip of a curly-perm client in the real GGS barbershop. */
+/** GGS Cowok slide 5: perm promo over a curly-perm client sitting in the real GGS barber chair. */
 export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  useEffect(() => {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) videoRef.current?.pause();
-  }, []);
   return (
     <div
       ref={exportRef as RefObject<HTMLDivElement | null>}
@@ -21,7 +16,7 @@ export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTML
       role="img"
       aria-label={`GGS Barber Hairstudio — ${kicker} ${service}, ${subtitle}, ${formatRupiah(price)}`}
     >
-      <video ref={videoRef} className="ggmp-photo" src={clip.url} poster={poster} autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
+      <img className="ggmp-photo" src={photo} width={1080} height={1440} alt="" />
       <span className="ggmp-fade" aria-hidden="true" />
 
       <section className="ggmp-head" aria-hidden="true">
