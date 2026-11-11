@@ -53,6 +53,7 @@ import { PrebuiltPngDownload } from './components/PrebuiltPngDownload';
 import ggsMenContactPng from '@/assets/ggs-cowok-02-customer-service.png.asset.json';
 import ggsMenDoubleDayPng from '@/assets/ggs-men-03-diskon-1111.png.asset.json';
 import ggsMenBurstFadePng from '@/assets/ggs-men-04-burst-fade-cover.png.asset.json';
+import ggsMenPermPng from '@/assets/ggs-men-05-perm-175000.png.asset.json';
 import {
   FaFileExcel,
   FaFileWord,
@@ -3370,6 +3371,18 @@ function App() {
               className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
             />
             <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
+          </div>
+        )}
+        {isGgsMen && ggsMenSlide === 5 && (
+          <div className="mb-3 flex flex-col items-center gap-2">
+            <PrebuiltPngDownload
+              key="ggs-men-05"
+              src={ggsMenPermPng.url}
+              fileName="GGS-Cowok-05-Promo-Perming-175000.png"
+              label="Download PNG"
+              className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+            />
+            <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 2880×3840, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
           </div>
         )}
         {isGgsMen && ggsMenSlide === 1 && <div className="mb-3"><Button asChild><a href={ggsMenVideo.url} download="GGS-Cowok-Pilihan-Rambut.mp4"><Download className="h-4 w-4" aria-hidden="true" />Download video · MP4 1440×1920</a></Button></div>}
