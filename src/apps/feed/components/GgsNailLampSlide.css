@@ -4,16 +4,16 @@
 .ggnl-wash{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--ggnl-wash)}
 
 /* Headline on the cream, left; the price sits in a round badge that bridges cream and photo over the forearm (no nails underneath). */
-.ggnl-head{position:absolute;z-index:2;left:6cqw;top:19cqw;width:54cqw;display:flex;flex-direction:column;align-items:flex-start}
+.ggnl-head{position:absolute;z-index:2;left:6cqw;top:21.5cqw;width:54cqw;display:flex;flex-direction:column;align-items:flex-start}
 .ggnl-kicker{margin:0;padding:.7cqw 2.4cqw;border-radius:999px;background:var(--ggnl-primary);font-size:3cqw;font-weight:800;line-height:1.2;text-transform:uppercase;letter-spacing:0;color:var(--ggnl-paper)}
 .ggnl-title{margin:1.2cqw 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:13cqw;line-height:1;color:var(--ggnl-ink);white-space:nowrap;text-shadow:var(--ggnl-glow)}
 .ggnl-title em{font-style:italic;font-weight:600;color:var(--ggnl-primary)}
 .ggnl-sub{margin:1.6cqw 0 0;font-size:3.6cqw;line-height:1.25;font-weight:700;letter-spacing:0;color:var(--ggnl-ink);text-shadow:var(--ggnl-glow)}
 
-.ggnl-badge{position:absolute;z-index:2;right:4cqw;top:29cqw;width:35cqw;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4cqw;background:var(--ggnl-primary);box-shadow:var(--ggnl-badge-ring),var(--ggnl-card-shadow);transform:rotate(-8deg);color:var(--ggnl-paper)}
+.ggnl-badge{position:absolute;z-index:2;right:4cqw;top:28cqw;width:37cqw;aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4cqw;background:var(--ggnl-primary);box-shadow:var(--ggnl-badge-ring),var(--ggnl-card-shadow);transform:rotate(-8deg);color:var(--ggnl-paper)}
 .ggnl-start{margin:0;font-family:'Playfair Display',Georgia,serif;font-style:italic;font-size:4.6cqw;font-weight:600;line-height:1;letter-spacing:0}
-.ggnl-price{margin:0;display:flex;align-items:baseline;gap:.6cqw;line-height:1;white-space:nowrap}
-.ggnl-price small{font-size:3.6cqw;font-weight:700}
-.ggnl-price strong{font-size:8.4cqw;font-weight:800;letter-spacing:0;font-variant-numeric:tabular-nums}
+.ggnl-price{margin:0;display:flex;align-items:flex-start;gap:.6cqw;line-height:1;white-space:nowrap}
+.ggnl-price small{margin-top:.9cqw;font-size:3.2cqw;font-weight:700}
+.ggnl-price strong{font-size:7.4cqw;font-weight:800;letter-spacing:0;font-variant-numeric:tabular-nums}
 
 .ggnl-watermark{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:contain;pointer-events:none}
