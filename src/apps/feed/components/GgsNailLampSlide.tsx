@@ -15,7 +15,7 @@ export function GgsNailLampSlide({ exportRef }: { exportRef?: RefObject<HTMLElem
       aria-label={`GGS Beauty — promo ${GGS_NAIL_LAMP_PROMO.title} mulai Rp ${GGS_NAIL_LAMP_PROMO.price}`}
     >
       <img className="ggnl-photo" src={photo} alt="" aria-hidden="true" />
-      <span className="ggnl-fade" aria-hidden="true" />
+      <span className="ggnl-rule" aria-hidden="true" />
 
       <section className="ggnl-head">
         <div className="ggnl-title-col">
