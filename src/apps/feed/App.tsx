@@ -158,7 +158,7 @@ import { GgsHairBeautySlide } from './components/GgsHairBeautySlide';
 import { GgsPahlawanReminderSlide } from './components/GgsPahlawanReminderSlide';
 import { GgsDoubleDaySlide } from './components/GgsDoubleDaySlide';
 import { GgsNailColorsSlide } from './components/GgsNailColorsSlide';
-// NAIL32_VIDEO_IMPORT
+import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -3398,7 +3398,7 @@ function App() {
               </>
             ) : activeFeed === 'client' && activeClientSlide === 32 ? (
               <>
-                <PrebuiltVideoDownload src={''} fileName="GGS-Feed-32-Nail-Art-Warna-Polos.mp4" />
+                <PrebuiltVideoDownload src={ggsNailColorsVideo.url} fileName="GGS-Feed-32-Nail-Art-Warna-Polos.mp4" />
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
                   Video 20 detik · 1440×1920 · tanpa suara, persis seperti pratinjau.
                 </p>
