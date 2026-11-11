@@ -8,7 +8,7 @@
 
 .ggmh-palette{position:absolute;z-index:2;left:0;right:0;top:91.5cqw;display:flex;flex-direction:column;align-items:center;gap:2.2cqw}
 .ggmh-names{position:relative;width:70cqw;height:6.4cqw}
-.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:6cqw;line-height:1;color:var(--ggmp-paper);text-shadow:var(--ggmh-name-shadow);opacity:0;animation:ggmh-show var(--ggmh-loop) linear infinite}
+.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:6cqw;line-height:1;color:var(--ggmp-paper);text-shadow:var(--ggmh-name-shadow);opacity:0;animation:ggmh-name var(--ggmh-loop) linear infinite}
 .ggmh-chips{margin:0;padding:0;list-style:none;display:flex;gap:1.5cqw}
 .ggmh-chips li{width:4.2cqw;height:4.2cqw;border-radius:50%;background-image:var(--ggmh-chip-gloss);box-shadow:var(--ggmh-chip-off);animation:ggmh-chip var(--ggmh-loop) linear infinite}
 
