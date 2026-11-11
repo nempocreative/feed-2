@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "129f6f01-e1a9-4206-99b4-a701f4e98e9e",
-  "project_id": "c21ae28b-17d0-4fbb-8ef7-035d730a0400",
-  "url": "/__l5e/assets-v1/129f6f01-e1a9-4206-99b4-a701f4e98e9e/ggs-feed-33-nail-art-cat-eye.mp4",
-  "r2_key": "a/v1/c21ae28b-17d0-4fbb-8ef7-035d730a0400/129f6f01-e1a9-4206-99b4-a701f4e98e9e/ggs-feed-33-nail-art-cat-eye.mp4",
-  "original_filename": "ggs-feed-33-nail-art-cat-eye.mp4",
-  "size": 1203157,
   "content_type": "video/mp4",
-  "created_at": "2026-11-11T11:14:44Z"
+  "created_at": "2026-11-11T11:14:44Z",
+  "original_filename": "ggs-feed-33-nail-art-cat-eye.mp4",
+  "project_id": "55c37be7-54a1-43b0-b6a7-b97bf132d765",
+  "r2_key": "a/v1/55c37be7-54a1-43b0-b6a7-b97bf132d765/129f6f01-e1a9-4206-99b4-a701f4e98e9e/ggs-feed-33-nail-art-cat-eye.mp4",
+  "size": 1203157,
+  "url": "/__l5e/assets-v1/129f6f01-e1a9-4206-99b4-a701f4e98e9e/ggs-feed-33-nail-art-cat-eye.mp4",
+  "version": 1
 }
