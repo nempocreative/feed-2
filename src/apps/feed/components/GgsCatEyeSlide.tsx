@@ -1,8 +1,6 @@
 import type { CSSProperties, RefObject } from 'react';
-import photo from '@/assets/ggs-feed-32-nail-coaster.jpg.asset.json';
-import nailMask from '@/assets/ggs-feed-32-nail-mask.png.asset.json';
-import nailShade from '@/assets/ggs-feed-32-nail-shade.png.asset.json';
-import nailGloss from '@/assets/ggs-feed-32-nail-gloss.png.asset.json';
+import photo from '@/assets/ggs-feed-33-cat-eye-glitter.jpg';
+import nailMask from '@/assets/ggs-feed-33-glitter-mask.png';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import { GGS_CAT_EYE_COLORS, GGS_CAT_EYE_COLOR_SECONDS, GGS_CAT_EYE_LOOP_SECONDS, GGS_CAT_EYE_PROMO } from './ggs-cat-eye';
 import './GgsCatEyeSlide.css';
@@ -33,19 +31,17 @@ export function GgsCatEyeSlide({ exportRef }: { exportRef?: RefObject<HTMLElemen
     >
       <style>{paintKeyframes + chipKeyframes}</style>
       <div className="ggce-scene" aria-hidden="true">
-        <img className="ggce-photo" src={photo.url} width={1440} height={1920} alt="" />
+        <img className="ggce-photo" src={photo} width={1440} height={1920} alt="" />
 
         <div className="ggce-nails">
           <span
             className="ggce-paint"
-            style={{ maskImage: `url(${nailMask.url})`, WebkitMaskImage: `url(${nailMask.url})` } as CSSProperties}
+            style={{ maskImage: `url(${nailMask})`, WebkitMaskImage: `url(${nailMask})` } as CSSProperties}
           />
           <span
             className="ggce-streak"
-            style={{ maskImage: `url(${nailMask.url})`, WebkitMaskImage: `url(${nailMask.url})` } as CSSProperties}
+            style={{ maskImage: `url(${nailMask})`, WebkitMaskImage: `url(${nailMask})` } as CSSProperties}
           />
-          <img className="ggce-shade" src={nailShade.url} alt="" />
-          <img className="ggce-gloss" src={nailGloss.url} alt="" />
         </div>
       </div>
 
