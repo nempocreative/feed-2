@@ -150,6 +150,16 @@
   --ggce-chip-on: 0 0 0 .45cqw #ffffff, 0 0 0 .8cqw #c2185b, 0 1.2cqw 1.8cqw color-mix(in srgb, #5a0f36 32%, transparent);
   --ggce-chip-gloss: linear-gradient(115deg, color-mix(in srgb, #ffffff 42%, transparent) 0%, color-mix(in srgb, #ffffff 0%, transparent) 38%);
 }
+/* GGS Feed slide 34 (3:4): nail art promo over the owner's retouched lamp photo. */
+.ggnl-root {
+  --ggnl-ink: #3d0b2a;
+  --ggnl-ink-soft: #7a3a5c;
+  --ggnl-paper: #fff5fa;
+  --ggnl-primary: #c2185b;
+  --ggnl-card: color-mix(in srgb, #ffffff 94%, transparent);
+  --ggnl-card-shadow: 0 1.4cqw 3.6cqw color-mix(in srgb, #5a0f36 26%, transparent);
+  --ggnl-gold: #d4a63c;
+}
 .gg11-root {
   --gg11-sky: #bcd9f3;
   --gg11-white: #ffffff;

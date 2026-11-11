@@ -162,6 +162,7 @@ import { GgsPahlawanReminderSlide } from './components/GgsPahlawanReminderSlide'
 import { GgsDoubleDaySlide } from './components/GgsDoubleDaySlide';
 import { GgsNailColorsSlide } from './components/GgsNailColorsSlide';
 import { GgsCatEyeSlide } from './components/GgsCatEyeSlide';
+import { GgsNailLampSlide } from './components/GgsNailLampSlide';
 import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
 import ggsCatEyeVideo from '@/assets/ggs-feed-33-nail-art-cat-eye.mp4.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
@@ -235,7 +236,7 @@ type FeedSlide =
   | 44
   | 45;
 
-type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33;
+type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34;
 
 const cafes = [
   {
@@ -2831,6 +2832,10 @@ function ClientFeedArtwork({
     return <GgsCatEyeSlide exportRef={exportRef} />;
   }
 
+  if (!isStory && slide === 34) {
+    return <GgsNailLampSlide exportRef={exportRef} />;
+  }
+
   if (!isStory && slide >= 13 && slide <= 18) {
     return <GgsServicesSlide exportRef={exportRef} data={GGS_SERVICES_SLIDES[slide - 13]!} />;
   }
@@ -3179,7 +3184,7 @@ function App() {
       : isGgsFeed
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
-        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
