@@ -183,7 +183,7 @@
   --ggmp-ink-soft: #4a3f30;
   --ggmp-brass: #b88a3e;
   --ggmp-brass-deep: #84602a;
-  --ggmp-fade: linear-gradient(180deg, color-mix(in srgb, #f5eee2 78%, transparent) 0%, color-mix(in srgb, #f5eee2 55%, transparent) 26%, color-mix(in srgb, #f5eee2 0%, transparent) 42%, color-mix(in srgb, #f5eee2 0%, transparent) 100%);
+  --ggmp-fade: linear-gradient(180deg, color-mix(in srgb, #f5eee2 82%, transparent) 0%, color-mix(in srgb, #f5eee2 70%, transparent) 22%, color-mix(in srgb, #f5eee2 46%, transparent) 34%, color-mix(in srgb, #f5eee2 0%, transparent) 48%, color-mix(in srgb, #f5eee2 0%, transparent) 100%);
   --ggmp-price-shadow: 0 1.2cqw 3.2cqw color-mix(in srgb, #1a1006 38%, transparent);
 }
 
