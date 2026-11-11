@@ -13,8 +13,13 @@ describe('GGS Cowok colouring promo', () => {
   it('costs Rp200.000', () => {
     expect(GGS_MEN_COLOURING_PROMO.price).toBe(200000);
   });
-  it('cycles through 8 distinct hair colours in one 12.8-second loop', () => {
-    expect(new Set(GGS_MEN_HAIR_COLORS.map((c) => c.hex)).size).toBe(8);
-    expect(GGS_MEN_HAIR_LOOP_SECONDS).toBeCloseTo(12.8);
+  it('cycles through 12 distinct hair colours, each with its own photo, in one 16.8-second loop', () => {
+    expect(new Set(GGS_MEN_HAIR_COLORS.map((c) => c.hex)).size).toBe(12);
+    expect(new Set(GGS_MEN_HAIR_COLORS.map((c) => c.photo)).size).toBe(12);
+    expect(GGS_MEN_HAIR_LOOP_SECONDS).toBeCloseTo(16.8);
+  });
+  it('includes the bold colours the owner asked for', () => {
+    const names = GGS_MEN_HAIR_COLORS.map((c) => c.name);
+    for (const n of ['Maroon', 'Kuning', 'Pink', 'Hijau Toska']) expect(names).toContain(n);
   });
 });

@@ -54,7 +54,7 @@ import ggsMenContactPng from '@/assets/ggs-cowok-02-customer-service.png.asset.j
 import ggsMenDoubleDayPng from '@/assets/ggs-men-03-diskon-1111.png.asset.json';
 import ggsMenBurstFadePng from '@/assets/ggs-men-04-burst-fade-cover.png.asset.json';
 import ggsMenPermPng from '@/assets/ggs-men-05-perm-175000.png.asset.json';
-import ggsMenColouringPng from '@/assets/ggs-men-06-colouring-200000.png.asset.json';
+import ggsMenColouringVideo from '@/assets/ggs-cowok-06-colouring-warna-rambut.mp4.asset.json';
 import {
   FaFileExcel,
   FaFileWord,
@@ -3395,14 +3395,7 @@ function App() {
         )}
         {isGgsMen && ggsMenSlide === 6 && (
           <div className="mb-3">
-            <Button asChild>
-            <PrebuiltPngDownload
-              key="ggs-men-06"
-              src={ggsMenColouringPng.url}
-              fileName="GGS-Cowok-06-Promo-Colouring-200000.png"
-              label="Download PNG"
-            />
-            </Button>
+            <PrebuiltVideoDownload src={ggsMenColouringVideo.url} fileName="GGS-Cowok-06-Promo-Colouring-200000.mp4" />
           </div>
         )}
         {isGgsMen && ggsMenSlide === 1 && <div className="mb-3"><Button asChild><a href={ggsMenVideo.url} download="GGS-Cowok-Pilihan-Rambut.mp4"><Download className="h-4 w-4" aria-hidden="true" />Download video · MP4 1440×1920</a></Button></div>}

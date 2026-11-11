@@ -7,20 +7,21 @@ export const GGS_MEN_COLOURING_PROMO = {
   price: 200_000,
 } as const;
 
-/**
- * Hair colours the slide-6 video cycles through. `hex` tints the hair (colour blend keeps the real strands),
- * `lift` is a soft-light grey (above #808080 lightens, below darkens) so silver/blonde read bleached and burgundy stays deep.
- */
+/** Hair colours slide 6 cycles through; each has its own AI photo (`photo` = file key in GgsMenColouringPromoSlide). */
 export const GGS_MEN_HAIR_COLORS = [
-  { name: 'Ash Grey', hex: '#8a9099', lift: '#a8a8a8' },
-  { name: 'Silver', hex: '#d3d6dc', lift: '#d8d8d8' },
-  { name: 'Golden Blonde', hex: '#c99a4a', lift: '#b4b4b4' },
-  { name: 'Caramel Brown', hex: '#8e5e38', lift: '#7c7c7c' },
-  { name: 'Copper', hex: '#b8582a', lift: '#8a8a8a' },
-  { name: 'Burgundy', hex: '#7a2236', lift: '#4c4c4c' },
-  { name: 'Ash Blue', hex: '#56708f', lift: '#6c6c6c' },
-  { name: 'Ash Purple', hex: '#76609a', lift: '#707070' },
+  { name: 'Kuning', hex: '#f2c52a', photo: 'kuning' },
+  { name: 'Merah', hex: '#d4202c', photo: 'merah' },
+  { name: 'Pink', hex: '#e23d82', photo: 'pink' },
+  { name: 'Hijau Toska', hex: '#1fb0a6', photo: 'hijau-toska' },
+  { name: 'Biru Elektrik', hex: '#1f4fd6', photo: 'biru-elektrik' },
+  { name: 'Maroon', hex: '#6e1f2e', photo: 'burgundy' },
+  { name: 'Oranye', hex: '#d0612a', photo: 'copper' },
+  { name: 'Ungu', hex: '#8a64a8', photo: 'ash-purple' },
+  { name: 'Silver', hex: '#d9dade', photo: 'silver' },
+  { name: 'Golden Blonde', hex: '#d4a868', photo: 'golden-blonde' },
+  { name: 'Ash Blue', hex: '#5e7192', photo: 'ash-blue' },
+  { name: 'Ash Grey', hex: '#8b8e94', photo: 'ash-grey' },
 ] as const;
 
-export const GGS_MEN_HAIR_COLOR_SECONDS = 1.6;
+export const GGS_MEN_HAIR_COLOR_SECONDS = 1.4;
 export const GGS_MEN_HAIR_LOOP_SECONDS = GGS_MEN_HAIR_COLORS.length * GGS_MEN_HAIR_COLOR_SECONDS;
