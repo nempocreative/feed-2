@@ -17,9 +17,9 @@ const paintKeyframes = `@keyframes ggna-paint{${GGS_NAIL_COLORS.map(
 ).join('')}100%{background-color:${GGS_NAIL_COLORS[0].hex}}}`;
 
 /** Chip keyframes: active while its color is on the nails (chip delays line each one up with its color). */
-const chipKeyframes = `@keyframes ggna-chip{0%,${pct(HOLD)}{transform:translateY(-1.1cqw) scale(1.16);box-shadow:var(--ggna-chip-on)}${pct(
+const chipKeyframes = `@keyframes ggna-chip{0%,${pct(HOLD)}{transform:translateY(-.5cqw) scale(1.14);box-shadow:var(--ggna-chip-on)}${pct(
   1,
-)},${(100 - ((1 - HOLD) / N) * 100).toFixed(3)}%{transform:none;box-shadow:var(--ggna-chip-off)}100%{transform:translateY(-1.1cqw) scale(1.16);box-shadow:var(--ggna-chip-on)}}`;
+)},${(100 - ((1 - HOLD) / N) * 100).toFixed(3)}%{transform:none;box-shadow:var(--ggna-chip-off)}100%{transform:translateY(-.5cqw) scale(1.14);box-shadow:var(--ggna-chip-on)}}`;
 
 /** GGS Feed slide 32: Nail Art Rp 35.000 — a hand on the GGS coaster whose plain natural nails cycle through every swatch color. */
 export function GgsNailColorsSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
