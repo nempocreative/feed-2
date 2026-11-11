@@ -32,5 +32,5 @@
 - [x] GGS Cowok slide 04: video cover "Burst Fade" with the owner's photo + PNG download
 - [x] GGS Cowok slide 04: more elegant cover, sharper photo, more creative lettering
 - [x] GGS Cowok slide 5: real GGS barbershop look — perm client sitting upright in the owner's maroon barber chair (photo built from the owner's chair photo), headline made readable again
-- [ ] GGS Cowok slide 5: looping video + MP4 download (credits are back — needs the owner's choice of motion)
+- [x] GGS Cowok slide 5: owner dropped the video — photo only, fix the seated pose
 - [x] GGS Feed slide 32: Promo Nail Art 35.000 — hand on the GGS coaster, short natural (not fake) plain nails cycling through every swatch color from the owner's photos, MP4 download
