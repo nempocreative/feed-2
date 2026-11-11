@@ -42,7 +42,6 @@ const fadeIn = pct(N - (1 - HOLD));
 const half = HOLD + (1 - HOLD) / 2;
 const keyframes =
   `@keyframes ggmh-name{0%,${pct(HOLD)}{opacity:1;transform:none}${pct(half)},${pct(N - 1 + half)}{opacity:0;transform:translateY(.8cqw)}100%{opacity:1;transform:none}}` +
-  `@keyframes ggmh-show{0%,${pct(HOLD)}{opacity:1}${pct(1)},${fadeIn}{opacity:0}100%{opacity:1}}` +
   `@keyframes ggmh-photo{0%,${pct(HOLD)}{opacity:1}${pct(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
   `@keyframes ggmh-photo-first{0%,${pct(HOLD)}{opacity:1}${pct(1)},${fadeIn}{opacity:0}100%{opacity:1}}` +
   `@keyframes ggmh-photo-last{0%,${pct(1)}{opacity:1}${at(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
