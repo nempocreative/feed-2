@@ -42,3 +42,4 @@
 - [x] GGS Cowok slide 6 v2: one AI photo per hair colour (bright colours incl. maroon, kuning, pink, hijau toska) crossfading, with MP4 download
 - [x] GGS Cowok slide 6 v3: colour menu without any capsule/box, dots shrunk to 1.9cqw with cream+dark rings; MP4 re-recorded (504 frames stepped in ms) and re-uploaded
 - [x] GGS Cowok slide 6: download video flickered ahead of the preview — re-recorded with every frame checked against the preview timing
+- [x] GGS Feed slide 34: tidy headline/price alignment, show both hands and nails without footer overlap, regenerate and verify PNG
