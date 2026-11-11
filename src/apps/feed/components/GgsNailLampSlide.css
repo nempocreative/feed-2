@@ -3,7 +3,7 @@
 .ggnl-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 68%}
 .ggnl-fade{position:absolute;inset:0;z-index:1;background:var(--ggnl-fade);pointer-events:none}
 
-.ggnl-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:17cqw;display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw}
+.ggnl-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:12cqw;display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw}
 .ggnl-title-col{display:flex;flex-direction:column;align-items:flex-start}
 .ggnl-price-col{display:flex;flex-direction:column;align-items:center;gap:1.2cqw}
 .ggnl-kicker{margin:0;padding:.8cqw 2.6cqw;border-radius:99cqw;background:var(--ggnl-primary);color:var(--ggnl-paper);font-size:2.1cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw}
