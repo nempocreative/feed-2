@@ -43,3 +43,4 @@
 - [x] GGS Cowok slide 6 v3: colour menu without any capsule/box, dots shrunk to 1.9cqw with cream+dark rings; MP4 re-recorded (504 frames stepped in ms) and re-uploaded
 - [x] GGS Cowok slide 6: download video flickered ahead of the preview — re-recorded with every frame checked against the preview timing
 - [x] GGS Feed slide 34: tidy headline/price alignment, show both hands and nails without footer overlap, regenerate and verify PNG
+- [x] GGS Feed slide 34: merge the photo into the background — full-bleed with a cream top fade, no framed block or divider line; PNG download re-captured and verified (2880×3840)

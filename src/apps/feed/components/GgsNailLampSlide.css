@@ -1,9 +1,9 @@
 .ggnl-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggnl-paper);font-family:'DM Sans',sans-serif;color:var(--ggnl-ink)}
-/* Crop away the desk above the hands and keep every nail above the branded footer. */
-.ggnl-photo{position:absolute;left:0;top:43cqw;width:100%;height:78cqw;object-fit:cover;object-position:50% 63%}
-.ggnl-rule{position:absolute;z-index:1;left:6cqw;right:6cqw;top:40.5cqw;height:.12cqw;background:var(--ggnl-gold);opacity:.7}
+/* Full-bleed photo: the lamp photo is the slide background, no framed block, and the cream wash melts its top into the paper. */
+.ggnl-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.ggnl-wash{position:absolute;inset:0;z-index:1;pointer-events:none;background:var(--ggnl-wash)}
 
-.ggnl-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:22cqw;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:3cqw}
+.ggnl-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:20cqw;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:3cqw}
 .ggnl-title-col{display:flex;min-width:0;flex-direction:column;align-items:flex-start}
 .ggnl-price-col{display:flex;min-width:0;flex-direction:column;align-items:flex-end;gap:1.2cqw}
 .ggnl-kicker{margin:0;font-size:2.1cqw;font-weight:700;text-transform:uppercase;letter-spacing:0;color:var(--ggnl-primary)}
