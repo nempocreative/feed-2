@@ -39,4 +39,4 @@
 - [x] GGS Feed slide 33: install the owner's reference-style glitter ombre cat-eye photo, retain color cycling, regenerate and verify the MP4 after remix
 - [x] GGS Feed slide 33: tighten the nail outline so color stays inside each nail, re-record MP4
 - [x] GGS Cowok slide 6: promo Colouring Rp200.000 with barber photo and sharp PNG download
-- [ ] GGS Cowok slide 6 v2: one AI photo per hair colour (bright colours incl. maroon, kuning, pink, hijau toska) crossfading, with MP4 download
+- [x] GGS Cowok slide 6 v2: one AI photo per hair colour (bright colours incl. maroon, kuning, pink, hijau toska) crossfading, with MP4 download
