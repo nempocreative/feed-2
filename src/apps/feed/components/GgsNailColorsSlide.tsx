@@ -32,9 +32,10 @@ export function GgsNailColorsSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
       aria-label={`GGS Beauty — promo ${GGS_NAIL_COLORS_PROMO.title} Rp ${GGS_NAIL_COLORS_PROMO.price}, kuku polos dengan ${N} pilihan warna`}
     >
       <style>{paintKeyframes + chipKeyframes}</style>
-      <img className="ggna-photo" src={photo.url} width={1440} height={1920} alt="" aria-hidden="true" />
+      <div className="ggna-scene" aria-hidden="true">
+      <img className="ggna-photo" src={photo.url} width={1440} height={1920} alt="" />
 
-      <div className="ggna-nails" aria-hidden="true">
+      <div className="ggna-nails">
         <span
           className="ggna-paint"
           style={{ maskImage: `url(${nailMask.url})`, WebkitMaskImage: `url(${nailMask.url})` } as CSSProperties}
@@ -42,21 +43,24 @@ export function GgsNailColorsSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
         <img className="ggna-shade" src={nailShade.url} alt="" />
         <img className="ggna-gloss" src={nailGloss.url} alt="" />
       </div>
+      </div>
 
       <span className="ggna-fade" aria-hidden="true" />
 
       <section className="ggna-head">
         <div className="ggna-title-col">
-          <p className="ggna-kicker">Promo</p>
           <h2 className="ggna-title">
             Nail <em>Art</em>
           </h2>
           <p className="ggna-sub">Warna polos di kuku aslimu</p>
         </div>
-        <p className="ggna-price">
-          <small>Rp</small>
-          <strong>{GGS_NAIL_COLORS_PROMO.price}</strong>
-        </p>
+        <div className="ggna-price-col">
+          <p className="ggna-kicker">Promo</p>
+          <p className="ggna-price">
+            <small>Rp</small>
+            <strong>{GGS_NAIL_COLORS_PROMO.price}</strong>
+          </p>
+        </div>
       </section>
 
       <section className="ggna-palette" aria-hidden="true">

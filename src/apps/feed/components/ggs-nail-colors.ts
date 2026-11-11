@@ -8,7 +8,7 @@ export const GGS_NAIL_COLORS_PROMO = {
 
 /** One entry per swatch stick in the owner's three photos (16 in total), ordered so neighbours contrast. */
 export const GGS_NAIL_COLORS = [
-  { name: 'Nude pink', hex: '#dcc3c6' },
+  { name: 'Nude pink', hex: '#e2c2bf' },
   { name: 'Merah cherry', hex: '#a3001c' },
   { name: 'Biru laut', hex: '#0b5a8f' },
   { name: 'Baby pink', hex: '#f0a6bf' },
