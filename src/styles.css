@@ -201,7 +201,7 @@
   --ggmp-price-shadow: 0 1.2cqw 3.2cqw color-mix(in srgb, #1a1006 38%, transparent);
   --ggmh-floor: linear-gradient(180deg, transparent 62%, color-mix(in srgb, #0c0a08 55%, transparent) 76%, color-mix(in srgb, #0c0a08 35%, transparent) 100%);
   --ggmh-tray-edge: color-mix(in srgb, #b88a3e 60%, transparent);
-  --ggmh-chip-off: 0 0 0 .1cqw color-mix(in srgb, #f5eee2 42%, transparent), 0 0 0 .26cqw transparent;
+  --ggmh-chip-off: 0 0 0 .11cqw color-mix(in srgb, #f5eee2 58%, transparent), 0 0 0 .21cqw color-mix(in srgb, #0c0a08 45%, transparent);
   --ggmh-chip-on: 0 0 0 .16cqw #f5eee2, 0 0 0 .28cqw color-mix(in srgb, #b88a3e 85%, transparent);
 }
 
