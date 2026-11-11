@@ -14,4 +14,3 @@
 .ggmp-price-amount{font-family:'Cormorant Garamond',serif;font-weight:700;font-size:10.5cqw;line-height:.9;color:var(--ggmp-ink)}
 
 .ggmp-watermark{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:contain;pointer-events:none}
-@media (prefers-reduced-motion:reduce){.ggmp-photo{animation:none}}
