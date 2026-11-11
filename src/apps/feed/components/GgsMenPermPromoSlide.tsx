@@ -1,4 +1,4 @@
-import type { RefObject } from 'react';
+import { useEffect, useRef, type RefObject } from 'react';
 import poster from '@/assets/ggs-men-perm-real-barber.jpg';
 import clip from '@/assets/ggs-men-perm-real-barber.mp4.asset.json';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
@@ -10,6 +10,10 @@ const [rp, amount] = [formatRupiah(price).slice(0, 2), formatRupiah(price).slice
 
 /** GGS Cowok slide 5: perm promo over a looping clip of a curly-perm client in the real GGS barbershop. */
 export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) videoRef.current?.pause();
+  }, []);
   return (
     <div
       ref={exportRef as RefObject<HTMLDivElement | null>}
@@ -17,7 +21,7 @@ export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTML
       role="img"
       aria-label={`GGS Barber Hairstudio — ${kicker} ${service}, ${subtitle}, ${formatRupiah(price)}`}
     >
-      <video className="ggmp-photo" src={clip.url} poster={poster} autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
+      <video ref={videoRef} className="ggmp-photo" src={clip.url} poster={poster} autoPlay muted loop playsInline preload="auto" aria-hidden="true" />
       <span className="ggmp-fade" aria-hidden="true" />
 
       <section className="ggmp-head" aria-hidden="true">
