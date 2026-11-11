@@ -159,6 +159,7 @@ import { GgsPahlawanReminderSlide } from './components/GgsPahlawanReminderSlide'
 import { GgsDoubleDaySlide } from './components/GgsDoubleDaySlide';
 import { GgsNailColorsSlide } from './components/GgsNailColorsSlide';
 import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
+import ggsMenPermVideo from '@/assets/ggs-cowok-05-perming.mp4.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -3370,6 +3371,12 @@ function App() {
               className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
             />
             <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
+          </div>
+        )}
+        {isGgsMen && ggsMenSlide === 5 && (
+          <div className="mb-3 flex flex-col items-center gap-1">
+            <PrebuiltVideoDownload src={ggsMenPermVideo.url} fileName="GGS-Cowok-05-Perming.mp4" />
+            <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">Video 8 detik · 1440×1920 · suasana barber asli, persis seperti pratinjau.</p>
           </div>
         )}
         {isGgsMen && ggsMenSlide === 1 && <div className="mb-3"><Button asChild><a href={ggsMenVideo.url} download="GGS-Cowok-Pilihan-Rambut.mp4"><Download className="h-4 w-4" aria-hidden="true" />Download video · MP4 1440×1920</a></Button></div>}
