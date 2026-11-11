@@ -1,20 +1,19 @@
-/* Hair recolour: lift (soft-light grey) lightens or deepens the strands, tint (color blend) sets the hue while keeping the real texture. */
-.ggmh-hair{position:absolute;inset:0;z-index:0;display:block;-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:var(--ggmh-loop) linear infinite}
-.ggmh-lift{mix-blend-mode:soft-light;animation-name:ggmh-lift}
-.ggmh-tint{mix-blend-mode:color;opacity:.8;animation-name:ggmh-tint}
+/* One photo per hair colour, stacked and crossfaded; names and chips share the same timing. */
+.ggmh-photos{position:absolute;inset:0;z-index:0;background:var(--ggmp-paper)}
+.ggmh-photo{opacity:0;animation:ggmh-show var(--ggmh-loop) linear infinite}
 .ggmh-floor{position:absolute;inset:0;z-index:1;background:var(--ggmh-floor);pointer-events:none}
 
 .ggmh-head{top:12cqw}
 .ggmh-head .ggmp-title{font-size:13.5cqw}
 
 .ggmh-palette{position:absolute;z-index:2;left:0;right:0;top:91.5cqw;display:flex;flex-direction:column;align-items:center;gap:2.2cqw}
-.ggmh-names{position:relative;width:60cqw;height:6.4cqw}
-.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:6cqw;line-height:1;color:var(--ggmp-paper);text-shadow:var(--ggmh-name-shadow);opacity:0;animation:ggmh-on var(--ggmh-loop) linear infinite}
-.ggmh-chips{margin:0;padding:0;list-style:none;display:flex;gap:1.8cqw}
-.ggmh-chips li{width:4.4cqw;height:4.4cqw;border-radius:50%;background-image:var(--ggmh-chip-gloss);box-shadow:var(--ggmh-chip-off);animation:ggmh-chip var(--ggmh-loop) linear infinite}
+.ggmh-names{position:relative;width:70cqw;height:6.4cqw}
+.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:6cqw;line-height:1;color:var(--ggmp-paper);text-shadow:var(--ggmh-name-shadow);opacity:0;animation:ggmh-show var(--ggmh-loop) linear infinite}
+.ggmh-chips{margin:0;padding:0;list-style:none;display:flex;gap:1.5cqw}
+.ggmh-chips li{width:4.2cqw;height:4.2cqw;border-radius:50%;background-image:var(--ggmh-chip-gloss);box-shadow:var(--ggmh-chip-off);animation:ggmh-chip var(--ggmh-loop) linear infinite}
 
 .ggmh-price{bottom:16cqw;padding:1.4cqw 4.6cqw 1.8cqw}
 .ggmh-price .ggmp-price-amount{font-size:8.6cqw}
 .ggmh-price .ggmp-price-rp{font-size:3.8cqw;margin-top:1cqw}
 
-@media (prefers-reduced-motion:reduce){.ggmh-hair,.ggmh-names span,.ggmh-chips li{animation-play-state:paused}}
+@media (prefers-reduced-motion:reduce){.ggmh-photo,.ggmh-names span,.ggmh-chips li{animation-play-state:paused}}
