@@ -1,6 +1,6 @@
 .ggmp-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggmp-paper);font-family:'DM Sans',sans-serif;color:var(--ggmp-ink)}
 .ggmp-root *{letter-spacing:0}
-.ggmp-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 100%}
+.ggmp-photo{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 50%}
 .ggmp-fade{position:absolute;inset:0;z-index:1;background:var(--ggmp-fade);pointer-events:none}
 
 .ggmp-head{position:absolute;z-index:2;left:0;right:0;top:24cqw;display:flex;flex-direction:column;align-items:center}

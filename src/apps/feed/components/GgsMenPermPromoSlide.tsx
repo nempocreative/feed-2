@@ -1,5 +1,5 @@
 import type { RefObject } from 'react';
-import photo from '@/assets/ggs-men-perm-back.jpg';
+import photo from '@/assets/ggs-men-perm-chair.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import { formatRupiah, GGS_MEN_PERM_PROMO } from './ggs-men-perm-promo';
 import './GgsMenPermPromoSlide.css';
@@ -7,7 +7,7 @@ import './GgsMenPermPromoSlide.css';
 const { kicker, service, subtitle, price } = GGS_MEN_PERM_PROMO;
 const [rp, amount] = [formatRupiah(price).slice(0, 2), formatRupiah(price).slice(2)];
 
-/** GGS Cowok slide 5: perm promo over a curly-perm client seen from behind. */
+/** GGS Cowok slide 5: perm promo over a curly-perm client sitting in the real GGS barber chair. */
 export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
   return (
     <div
