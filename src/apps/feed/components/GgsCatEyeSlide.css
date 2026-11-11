@@ -1,0 +1,35 @@
+.ggce-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggce-paper);font-family:'DM Sans',sans-serif;color:var(--ggce-ink)}
+.ggce-scene{position:absolute;inset:0;z-index:0;}
+.ggce-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Nail layers share the cropped nail box measured on the 1440×1920 photo (same hand as slide 32). */
+.ggce-nails{position:absolute;z-index:1;left:55.2083%;top:49.2188%;width:39.0278%;height:31.3021%;isolation:isolate}
+.ggce-nails>*{position:absolute;inset:0;width:100%;height:100%;display:block}
+.ggce-paint{-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:ggce-paint var(--ggce-loop) linear infinite}
+/* Cat-eye magnetic streak: a soft diagonal band of light sweeping across the nails once per color. */
+.ggce-streak{-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;mix-blend-mode:screen;background-image:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.38) 44%,rgba(255,255,255,.9) 50%,rgba(255,255,255,.38) 56%,transparent 70%);background-size:280% 100%;background-repeat:no-repeat;animation:ggce-streak var(--ggce-color) ease-in-out infinite}
+@keyframes ggce-streak{0%{background-position:160% 0}55%{background-position:-60% 0}100%{background-position:-60% 0}}
+.ggce-shade{mix-blend-mode:multiply}
+
+.ggce-fade{position:absolute;inset:0;z-index:1;background:var(--ggce-fade);pointer-events:none}
+
+.ggce-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:17cqw;display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw}
+.ggce-title-col{display:flex;flex-direction:column;align-items:flex-start}
+.ggce-price-col{display:flex;flex-direction:column;align-items:center;gap:1.2cqw}
+.ggce-kicker{margin:0;padding:.8cqw 2.6cqw;border-radius:99cqw;background:var(--ggce-primary);color:var(--ggce-paper);font-size:2.1cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw}
+.ggce-title{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:10cqw;line-height:.95;color:var(--ggce-ink);white-space:nowrap}
+.ggce-title em{font-style:italic;font-weight:500;color:var(--ggce-primary)}
+.ggce-sub{margin:1.4cqw 0 0;font-size:2.7cqw;font-weight:600;letter-spacing:.05cqw;color:var(--ggce-ink-soft)}
+.ggce-was{margin:0;font-size:2.4cqw;font-weight:700;color:var(--ggce-ink-soft);opacity:.85}
+.ggce-price{margin:0 0 .4cqw;display:flex;align-items:flex-start;gap:.6cqw;padding:2.2cqw 3.2cqw;border-radius:3.4cqw;background:var(--ggce-card);box-shadow:var(--ggce-card-shadow);line-height:1;color:var(--ggce-primary);transform:rotate(-2deg)}
+.ggce-price small{margin-top:.8cqw;font-size:2.8cqw;font-weight:800}
+.ggce-price strong{font-size:8.6cqw;font-weight:800;letter-spacing:-.25cqw;font-variant-numeric:tabular-nums}
+
+.ggce-palette{position:absolute;z-index:2;left:6cqw;top:102.6cqw;display:flex;flex-direction:column;align-items:flex-start}
+.ggce-palette-label{margin:0 0 1.5cqw;font-size:1.8cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw;color:var(--ggce-ink-soft)}
+.ggce-chips{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(9,3.2cqw);column-gap:1.2cqw;row-gap:1.2cqw}
+.ggce-chip{width:3.2cqw;height:3.8cqw;border-radius:1.6cqw 1.6cqw 1cqw 1cqw;box-shadow:var(--ggce-chip-off);transform-origin:50% 70%;animation:ggce-chip var(--ggce-loop) linear infinite;background-image:var(--ggce-chip-gloss)}
+
+.ggce-watermark{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:contain;pointer-events:none}
+
+@media (prefers-reduced-motion:reduce){.ggce-paint,.ggce-streak,.ggce-chip{animation-play-state:paused}}
