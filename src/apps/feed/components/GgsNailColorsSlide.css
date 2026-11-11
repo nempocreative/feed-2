@@ -1,5 +1,5 @@
 .ggna-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggna-paper);font-family:'DM Sans',sans-serif;color:var(--ggna-ink)}
-.ggna-scene{position:absolute;inset:0;z-index:0;transform:scale(1.06);transform-origin:50% 0}
+.ggna-scene{position:absolute;inset:0;z-index:0;}
 .ggna-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* Nail layers share the cropped nail box measured on the 1440×1920 photo. */
@@ -10,7 +10,7 @@
 
 .ggna-fade{position:absolute;inset:0;z-index:1;background:var(--ggna-fade);pointer-events:none}
 
-.ggna-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:20cqw;display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw}
+.ggna-head{position:absolute;z-index:2;left:6cqw;right:6cqw;top:17cqw;display:flex;align-items:flex-end;justify-content:space-between;gap:3cqw}
 .ggna-title-col{display:flex;flex-direction:column;align-items:flex-start}
 .ggna-price-col{display:flex;flex-direction:column;align-items:center;gap:1.4cqw}
 .ggna-kicker{margin:0;padding:.8cqw 2.6cqw;border-radius:99cqw;background:var(--ggna-primary);color:var(--ggna-paper);font-size:2.1cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw}
@@ -21,10 +21,10 @@
 .ggna-price small{margin-top:.8cqw;font-size:2.8cqw;font-weight:800}
 .ggna-price strong{font-size:8.6cqw;font-weight:800;letter-spacing:-.25cqw;font-variant-numeric:tabular-nums}
 
-.ggna-palette{position:absolute;z-index:2;right:4cqw;top:37.6cqw;display:flex;flex-direction:column;align-items:center}
-.ggna-palette-label{margin:0 0 2.4cqw;font-size:2cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw;color:var(--ggna-ink-soft)}
-.ggna-chips{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,3.6cqw);column-gap:1.4cqw;row-gap:1.9cqw}
-.ggna-chip{width:3.6cqw;height:4.5cqw;border-radius:1.8cqw 1.8cqw 1.1cqw 1.1cqw;box-shadow:var(--ggna-chip-off);transform-origin:50% 70%;animation:ggna-chip var(--ggna-loop) linear infinite;background-image:var(--ggna-chip-gloss)}
+.ggna-palette{position:absolute;z-index:2;right:4cqw;top:39cqw;display:flex;flex-direction:column;align-items:center}
+.ggna-palette-label{margin:0 0 2.2cqw;font-size:1.9cqw;font-weight:700;text-transform:uppercase;letter-spacing:.5cqw;color:var(--ggna-ink-soft)}
+.ggna-chips{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(4,3.6cqw);column-gap:1.4cqw;row-gap:1.6cqw}
+.ggna-chip{width:3.6cqw;height:4.2cqw;border-radius:1.8cqw 1.8cqw 1.1cqw 1.1cqw;box-shadow:var(--ggna-chip-off);transform-origin:50% 70%;animation:ggna-chip var(--ggna-loop) linear infinite;background-image:var(--ggna-chip-gloss)}
 
 .ggna-watermark{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:contain;pointer-events:none}
 
