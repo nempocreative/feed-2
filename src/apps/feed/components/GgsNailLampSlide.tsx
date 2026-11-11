@@ -18,21 +18,24 @@ export function GgsNailLampSlide({ exportRef }: { exportRef?: RefObject<HTMLElem
       <div className="ggnl-wash" aria-hidden="true" />
 
       <section className="ggnl-head">
-        <div className="ggnl-title-col">
-          <h2 className="ggnl-title">
-            Nail <em>Art</em>
-          </h2>
-          <p className="ggnl-sub">Di kuku aslimu, rapi dan bersih</p>
-        </div>
-        <div className="ggnl-price-col">
-          <p className="ggnl-kicker">Promo</p>
-          <p className="ggnl-start">{GGS_NAIL_LAMP_PROMO.start}</p>
-          <p className="ggnl-price">
-            <small>Rp</small>
-            <strong>{GGS_NAIL_LAMP_PROMO.price}</strong>
-          </p>
-        </div>
+        <p className="ggnl-kicker">Promo</p>
+        <h2 className="ggnl-title">
+          Nail <em>Art</em>
+        </h2>
+        <p className="ggnl-sub">
+          Di kuku aslimu,
+          <br />
+          rapi dan bersih
+        </p>
       </section>
+
+      <div className="ggnl-badge">
+        <p className="ggnl-start">{GGS_NAIL_LAMP_PROMO.start}</p>
+        <p className="ggnl-price">
+          <small>Rp</small>
+          <strong>{GGS_NAIL_LAMP_PROMO.price}</strong>
+        </p>
+      </div>
 
       <img className="ggnl-watermark" src={ggsWatermark.url} alt="" aria-hidden="true" />
     </div>
