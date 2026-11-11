@@ -19,6 +19,6 @@ describe('GGS Feed slide 33 — cat-eye nail art promo', () => {
 
   it('loops for a whole number of 30 fps frames so the MP4 loops seamlessly', () => {
     expect(GGS_CAT_EYE_LOOP_SECONDS).toBe(GGS_CAT_EYE_COLORS.length * GGS_CAT_EYE_COLOR_SECONDS);
-    expect((GGS_CAT_EYE_LOOP_SECONDS * 30) % 1).toBe(0);
+    expect(GGS_CAT_EYE_LOOP_SECONDS * 30).toBeCloseTo(324, 6);
   });
 });
