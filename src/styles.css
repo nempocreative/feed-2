@@ -200,10 +200,11 @@
   --ggmp-fade: linear-gradient(180deg, color-mix(in srgb, #f5eee2 80%, transparent) 0%, color-mix(in srgb, #f5eee2 60%, transparent) 22%, color-mix(in srgb, #f5eee2 0%, transparent) 33%, color-mix(in srgb, #f5eee2 0%, transparent) 100%);
   --ggmp-price-shadow: 0 1.2cqw 3.2cqw color-mix(in srgb, #1a1006 38%, transparent);
   --ggmh-floor: linear-gradient(180deg, transparent 62%, color-mix(in srgb, #0c0a08 55%, transparent) 76%, color-mix(in srgb, #0c0a08 35%, transparent) 100%);
-  --ggmh-name-shadow: 0 .3cqw 1.6cqw color-mix(in srgb, #000000 70%, transparent);
-  --ggmh-chip-gloss: radial-gradient(circle at 32% 28%, color-mix(in srgb, #ffffff 55%, transparent) 0%, transparent 45%);
-  --ggmh-chip-off: 0 0 0 .2cqw color-mix(in srgb, #f5eee2 55%, transparent), 0 .4cqw 1cqw color-mix(in srgb, #000000 45%, transparent);
-  --ggmh-chip-on: 0 0 0 .4cqw #f5eee2, 0 0 0 .75cqw #b88a3e, 0 1cqw 2cqw color-mix(in srgb, #000000 55%, transparent);
+  --ggmh-tray: #12100d;
+  --ggmh-tray-edge: color-mix(in srgb, #b88a3e 60%, transparent);
+  --ggmh-tray-shadow: 0 1.2cqw 3cqw color-mix(in srgb, #000000 42%, transparent);
+  --ggmh-chip-off: 0 0 0 .16cqw color-mix(in srgb, #f5eee2 34%, transparent), 0 0 0 .42cqw transparent;
+  --ggmh-chip-on: 0 0 0 .26cqw #f5eee2, 0 0 0 .42cqw color-mix(in srgb, #b88a3e 82%, transparent);
 }
 
 .ggpi-root {

@@ -6,11 +6,13 @@
 .ggmh-head{top:12cqw}
 .ggmh-head .ggmp-title{font-size:13.5cqw}
 
-.ggmh-palette{position:absolute;z-index:2;left:0;right:0;top:91.5cqw;display:flex;flex-direction:column;align-items:center;gap:2.2cqw}
-.ggmh-names{position:relative;width:70cqw;height:6.4cqw}
-.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:6cqw;line-height:1;color:var(--ggmp-paper);text-shadow:var(--ggmh-name-shadow);opacity:0;animation:ggmh-name var(--ggmh-loop) linear infinite}
-.ggmh-chips{margin:0;padding:0;list-style:none;display:flex;gap:1.5cqw}
-.ggmh-chips li{width:4.2cqw;height:4.2cqw;border-radius:50%;background-image:var(--ggmh-chip-gloss);box-shadow:var(--ggmh-chip-off);animation:ggmh-chip var(--ggmh-loop) linear infinite}
+/* The colour menu lives in its own dark capsule so the dots never sit on the cape's folds and snaps. */
+.ggmh-palette{position:absolute;z-index:2;left:50%;top:85.5cqw;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:1.5cqw;padding:2.2cqw 3.6cqw 2.5cqw;border-radius:99cqw;background:var(--ggmh-tray);border:.16cqw solid var(--ggmh-tray-edge);box-shadow:var(--ggmh-tray-shadow)}
+.ggmh-names{position:relative;width:62cqw;height:5.2cqw}
+.ggmh-names span{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:4.8cqw;line-height:1;color:var(--ggmp-paper);opacity:0;animation:ggmh-name var(--ggmh-loop) linear infinite}
+.ggmh-names span::before,.ggmh-names span::after{content:'';flex:0 0 auto;width:5cqw;height:.16cqw;background:var(--ggmh-tray-edge);margin:0 1.7cqw}
+.ggmh-chips{margin:0;padding:0;list-style:none;display:flex;gap:1.8cqw}
+.ggmh-chips li{width:3.9cqw;height:3.9cqw;border-radius:50%;box-shadow:var(--ggmh-chip-off);animation:ggmh-chip var(--ggmh-loop) linear infinite}
 
 .ggmh-price{bottom:16cqw;padding:1.4cqw 4.6cqw 1.8cqw}
 .ggmh-price .ggmp-price-amount{font-size:8.6cqw}

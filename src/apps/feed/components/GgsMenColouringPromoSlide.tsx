@@ -45,7 +45,7 @@ const keyframes =
   `@keyframes ggmh-photo{0%,${pct(HOLD)}{opacity:1}${pct(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
   `@keyframes ggmh-photo-first{0%,${pct(HOLD)}{opacity:1}${pct(1)},${fadeIn}{opacity:0}100%{opacity:1}}` +
   `@keyframes ggmh-photo-last{0%,${pct(1)}{opacity:1}${at(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
-  `@keyframes ggmh-chip{0%,${pct(HOLD)}{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}${pct(1)},${fadeIn}{transform:none;box-shadow:var(--ggmh-chip-off)}100%{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}}`;
+  `@keyframes ggmh-chip{0%,${pct(HOLD)}{transform:translateY(-.45cqw) scale(1.08);box-shadow:var(--ggmh-chip-on);opacity:1}${pct(1)},${fadeIn}{transform:none;box-shadow:var(--ggmh-chip-off);opacity:.7}100%{transform:translateY(-.45cqw) scale(1.08);box-shadow:var(--ggmh-chip-on);opacity:1}}`;
 
 const photoAnimation = (i: number) => (i === 0 ? 'ggmh-photo-first' : i === N - 1 ? 'ggmh-photo-last' : 'ggmh-photo');
 
