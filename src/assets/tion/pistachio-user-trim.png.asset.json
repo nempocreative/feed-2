@@ -1,11 +1,11 @@
 {
-  "asset_id": "02ae60dd-aa25-4317-b9c5-dbda87ae1335",
-  "content_type": "image/png",
-  "created_at": "2026-11-09T19:06:18Z",
+  "version": 1,
+  "asset_id": "89b08120-a8c9-414e-9d56-7df45856b88c",
+  "project_id": "7172220b-75c6-43e7-a2c8-a277d0e372ed",
+  "url": "/__l5e/assets-v1/89b08120-a8c9-414e-9d56-7df45856b88c/pistachio-user-trim.png",
+  "r2_key": "a/v1/7172220b-75c6-43e7-a2c8-a277d0e372ed/89b08120-a8c9-414e-9d56-7df45856b88c/pistachio-user-trim.png",
   "original_filename": "pistachio-user-trim.png",
-  "project_id": "63ff1ece-464f-47c7-9776-c2c8a846777d",
-  "r2_key": "a/v1/63ff1ece-464f-47c7-9776-c2c8a846777d/02ae60dd-aa25-4317-b9c5-dbda87ae1335/pistachio-user-trim.png",
   "size": 279692,
-  "url": "/__l5e/assets-v1/02ae60dd-aa25-4317-b9c5-dbda87ae1335/pistachio-user-trim.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-11T06:03:07Z"
 }

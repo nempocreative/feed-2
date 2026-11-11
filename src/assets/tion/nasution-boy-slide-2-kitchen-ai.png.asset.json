@@ -1,11 +1,11 @@
 {
-  "asset_id": "55a67ea1-e618-42a5-8eb7-97e8be315284",
-  "content_type": "image/png",
-  "created_at": "2026-11-09T19:06:14Z",
+  "version": 1,
+  "asset_id": "b1cde712-ca93-45f7-b081-4efa5e97fe32",
+  "project_id": "7172220b-75c6-43e7-a2c8-a277d0e372ed",
+  "url": "/__l5e/assets-v1/b1cde712-ca93-45f7-b081-4efa5e97fe32/nasution-boy-slide-2-kitchen-ai.png",
+  "r2_key": "a/v1/7172220b-75c6-43e7-a2c8-a277d0e372ed/b1cde712-ca93-45f7-b081-4efa5e97fe32/nasution-boy-slide-2-kitchen-ai.png",
   "original_filename": "nasution-boy-slide-2-kitchen-ai.png",
-  "project_id": "63ff1ece-464f-47c7-9776-c2c8a846777d",
-  "r2_key": "a/v1/63ff1ece-464f-47c7-9776-c2c8a846777d/55a67ea1-e618-42a5-8eb7-97e8be315284/nasution-boy-slide-2-kitchen-ai.png",
   "size": 1750006,
-  "url": "/__l5e/assets-v1/55a67ea1-e618-42a5-8eb7-97e8be315284/nasution-boy-slide-2-kitchen-ai.png",
-  "version": 1
+  "content_type": "image/png",
+  "created_at": "2026-11-11T06:02:59Z"
 }
