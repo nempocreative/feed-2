@@ -1,0 +1,33 @@
+# Roadmap
+
+- [x] Masker (Hair Treatment) jadi 60.000
+- [x] Urutkan: Potong rambut dulu, baru Potong cuci catok
+- [x] Samakan ukuran font semua halaman, rapatkan jarak, naikkan konten
+- [x] Catok rambut sambung jadi 50.000
+- [x] Potong cuci catok jadi 85.000
+- [x] Potong cuci curly jadi 90.000
+- [x] Potong cuci blow jadi 85.000
+- [x] Section Khusus treatment anak jadi halaman sendiri (7 lembar)
+- [x] Perbarui PDF unduhan dengan teks tajam untuk cetak; periksa seluruh halaman dan tombol unduhan (8 halaman, vector text)
+- [x] Pulihkan 72 foto/video yang hilang setelah remix ke penyimpanan proyek ini
+- [x] Add Body Treatment page (waxing, bekam, lulur, masker) and "Body massage + bekam" bundling; regenerate 8-page print PDF
+- [x] Restore Tion Feed slides 1–12 (opens on slide 8) from github.com/nempocreative/organizer
+- [x] GGS Feed slide 23: replace photo with the owner's upload and animate the hands (sharp MP4 download)
+- [x] GGS Feed slide 29: hair treatment "mempercantik diri" with the owner's retouched salon photo + PNG download
+- [x] GGS Feed slide 29 v2: AI-made background behind the original (unchanged-face) people, no frames/shapes, re-capture PNG
+- [x] GGS Feed slide 30: Hari Pahlawan "hari ini" reminder with the owner's team flashlight photo + PNG download
+- [x] GGS Feed slide 30: remove the yellow "Hari Pahlawan" line; label "Berlaku sampai tanggal 10 November"
+- [ ] "Body massage + bekam" duration — waiting on owner
+- [x] GGS Feed slide 31: 11.11 Double Day Sale — diskon 10–30% all treatment, Nail 35.000 / Massage 85.000 / Ratus 45.000, PNG download
+- [x] Tion Feed slide 13: Roti'O "Momen Manis" promo video in slide 12 look, sharp MP4 download, working download button
+- [x] Tion Feed slide 14: Hoka Seru 3 + Beef Teriyaki promo video (Rp44.000 dari Rp56.500, -23%), sharp MP4 download
+- [x] NEMPO Feed slide 44: Hari Pahlawan "hari ini" video slide (Tugu Pahlawan + flag, animated text) with MP4/PNG download
+- [x] NEMPO Feed slide 44: creative but not tacky ("jangan alay") fonts; re-record MP4/PNG
+- [x] NEMPO Feed slide 44: static text (no text animation), replace the lines beside the year, replace the italic serif font; re-record MP4/PNG
+- [x] NEMPO Feed slide 44: more breathing room around the "81" chip; center the Hari Pahlawan title; re-record MP4/PNG
+- [x] NEMPO Feed slide 44: smaller text with even spacing; re-record MP4/PNG
+- [x] NEMPO Feed slide 44: precise, even spacing for the bottom text block; re-record MP4/PNG
+- [x] NEMPO Feed slide 45: NEMPO customer service (layanan pelanggan) design with download
+- [x] NEMPO Feed slide 45: more attractive, no Telegram, emphasize EO / WO / Creative; re-capture PNG
+- [x] GGS Cowok slide 04: video cover "Burst Fade" with the owner's photo + PNG download
+- [x] GGS Cowok slide 04: more elegant cover, sharper photo, more creative lettering

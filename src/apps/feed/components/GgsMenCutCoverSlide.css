@@ -1,0 +1,21 @@
+.ggmc-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggmc-paper);font-family:'DM Sans',sans-serif;color:var(--ggmc-ink)}
+.ggmc-root *{letter-spacing:0}
+.ggmc-glow{position:absolute;inset:0;z-index:0;background:var(--ggmc-glow);pointer-events:none}
+
+.ggmc-head{position:absolute;z-index:2;left:0;right:0;top:26.5cqw;display:flex;flex-direction:column;align-items:center}
+.ggmc-kicker{margin:0;display:flex;align-items:center;gap:2cqw;padding-left:.9cqw;font-size:2.3cqw;font-weight:600;letter-spacing:.9cqw !important;text-transform:uppercase;color:var(--ggmc-brass-deep)}
+.ggmc-kicker span{display:block;width:6cqw;height:.22cqw;background:var(--ggmc-brass)}
+.ggmc-title{margin:.4cqw 0 0;display:flex;align-items:baseline;gap:2.6cqw;line-height:1}
+.ggmc-title em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:21cqw;line-height:.95;color:var(--ggmc-ink)}
+.ggmc-title b{position:relative;top:-1.2cqw;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:9.4cqw;letter-spacing:2.2cqw !important;margin-right:-2.2cqw;text-transform:uppercase;color:var(--ggmc-brass-deep)}
+
+.ggmc-arch{position:absolute;z-index:1;margin:0;left:10cqw;right:10cqw;top:52cqw;bottom:0}
+.ggmc-arch-line{position:absolute;left:-2cqw;right:-2cqw;top:-2cqw;bottom:0;border:.24cqw solid var(--ggmc-brass);border-bottom:0;border-radius:42cqw 42cqw 0 0}
+.ggmc-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 34%;border-radius:40cqw 40cqw 0 0;box-shadow:var(--ggmc-photo-shadow)}
+
+.ggmc-seal{position:absolute;z-index:2;right:4.5cqw;top:92cqw;width:19cqw;height:19cqw;border-radius:50%;background:var(--ggmc-paper);border:.22cqw solid var(--ggmc-brass);box-shadow:var(--ggmc-seal-shadow);display:grid;place-items:center}
+.ggmc-seal-ring{position:absolute;inset:0;width:100%;height:100%}
+.ggmc-seal text{font-family:'DM Sans',sans-serif;font-size:14px;font-weight:600;text-transform:uppercase;fill:var(--ggmc-brass-deep)}
+.ggmc-seal-icon{position:relative;width:5.6cqw;height:5.6cqw;color:var(--ggmc-ink)}
+
+.ggmc-watermark{position:absolute;inset:0;z-index:3;width:100%;height:100%;object-fit:contain;pointer-events:none}

@@ -1,0 +1,76 @@
+/* NEMPO Feed slide 44 — Hari Pahlawan. Background video, glow and embers move; all text stays still. */
+.nphl-controls { display: flex; justify-content: center; gap: 8px; margin-bottom: 12px; }
+.nphl-root {
+  position: relative; isolation: isolate; width: 100%; aspect-ratio: 3 / 4; overflow: hidden;
+  container-type: inline-size; background: var(--nphl-night); color: var(--kmt-text); font-family: 'DM Sans', sans-serif;
+}
+.nphl-root * { letter-spacing: 0; }
+.nphl-root { --nphl-font: 'Bricolage Grotesque', 'DM Sans', sans-serif; }
+.nphl-root p, .nphl-root h2, .nphl-root blockquote { margin: 0; padding: 0; }
+.nphl-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.nphl-stage { position: absolute; inset: 0; }
+.nphl-shade { position: absolute; inset: 0; background: var(--nphl-shade); pointer-events: none; }
+.nphl-glow {
+  position: absolute; left: 50%; top: 92cqw; width: 70cqw; height: 70cqw; margin: -35cqw 0 0 -35cqw; border-radius: 50%;
+  background: var(--nphl-sun-glow); mix-blend-mode: screen; animation: nphl-breathe 6.5s ease-in-out infinite;
+}
+@keyframes nphl-breathe { 0%, 100% { opacity: .55; transform: scale(.92); } 50% { opacity: 1; transform: scale(1.08); } }
+
+.nphl-embers i {
+  position: absolute; left: var(--x); bottom: -2cqw; width: calc(1cqw * var(--s)); height: calc(1cqw * var(--s)); border-radius: 50%;
+  background: var(--nphl-ember); box-shadow: 0 0 1.6cqw .4cqw var(--nphl-ember-glow);
+  animation: nphl-ember 6.5s linear var(--d) infinite both;
+}
+@keyframes nphl-ember {
+  0% { opacity: 0; transform: translate(0, 0) scale(1); }
+  12% { opacity: 1; }
+  60% { opacity: .9; transform: translate(4cqw, -70cqw) scale(.8); }
+  100% { opacity: 0; transform: translate(-2cqw, -128cqw) scale(.4); }
+}
+
+/* Title (static text) */
+.nphl-title-block { position: absolute; z-index: 3; top: 20cqw; left: 7.5cqw; right: 7.5cqw; display: flex; flex-direction: column; align-items: center; text-align: center; }
+.nphl-kicker {
+  font-family: var(--nphl-font); font-weight: 600; font-size: 2cqw; line-height: 1; letter-spacing: .28em !important;
+  text-transform: uppercase; color: var(--nphl-gold-soft); text-shadow: var(--nphl-text-shadow);
+}
+.nphl-title { margin-top: 2.4cqw !important; line-height: .92; color: var(--nphl-cream); text-shadow: 0 .5cqw 1.8cqw var(--nphl-drop); }
+.nphl-line { display: block; white-space: nowrap; font-family: var(--nphl-font); }
+.nphl-line-1 { font-weight: 300; font-size: 8cqw; font-variation-settings: 'wdth' 100, 'opsz' 96; letter-spacing: -.02em !important; }
+.nphl-line-2 {
+  font-weight: 800; font-stretch: 75%; font-variation-settings: 'wdth' 75, 'opsz' 96;
+  font-size: 10.5cqw; text-transform: uppercase; letter-spacing: -.01em !important; color: var(--nphl-gold);
+}
+.nphl-date {
+  display: flex; align-items: center; justify-content: center; gap: 1.6cqw; margin-top: 3cqw !important;
+  font-family: var(--nphl-font); font-weight: 600; font-size: 2.2cqw; line-height: 1; color: var(--kmt-text);
+  letter-spacing: .22em !important; text-shadow: var(--nphl-text-shadow);
+}
+.nphl-flag { display: flex; flex-direction: column; width: 3.2cqw; height: 2.1cqw; border-radius: .35cqw; overflow: hidden; box-shadow: 0 .3cqw 1cqw var(--nphl-drop); }
+.nphl-flag i { flex: 1; background: var(--nphl-flag-red); }
+.nphl-flag i + i { background: var(--nphl-flag-white); }
+
+/* Bottom: years, quote, closing */
+.nphl-bottom { position: absolute; z-index: 3; left: 7.5cqw; right: 7.5cqw; bottom: 16.8cqw; display: flex; flex-direction: column; align-items: center; gap: 3.4cqw; text-align: center; }
+.nphl-years {
+  display: inline-flex; align-items: center; gap: 1.8cqw; padding: 1.3cqw 3.8cqw 1.3cqw 3.4cqw !important; border-radius: 99px;
+  background: var(--nphl-chip); border: 1px solid var(--nphl-chip-line); color: var(--kmt-text);
+  font-family: var(--nphl-font); font-size: 1.9cqw; line-height: 1; font-weight: 600; letter-spacing: .12em !important; text-transform: uppercase;
+}
+.nphl-years b { font-family: var(--nphl-font); font-size: 3cqw; font-weight: 800; line-height: .8; color: var(--nphl-gold); letter-spacing: 0 !important; }
+.nphl-quote { max-width: 74cqw; }
+.nphl-quote p {
+  font-family: var(--nphl-font); font-weight: 400; font-size: 3.4cqw; line-height: 1.25; letter-spacing: -.01em !important; color: var(--nphl-cream);
+  text-shadow: var(--nphl-text-shadow);
+}
+.nphl-quote cite {
+  display: block; margin-top: 1.8cqw; line-height: 1; font-family: var(--nphl-font); font-style: normal; font-weight: 600; font-size: 1.8cqw; color: var(--nphl-gold-soft);
+  letter-spacing: .24em !important; text-transform: uppercase;
+}
+.nphl-closing {
+  line-height: 1; font-family: var(--nphl-font); font-weight: 500; font-size: 2.3cqw; color: var(--nphl-gold);
+  text-shadow: var(--nphl-text-shadow);
+}
+
+.nphl-root.is-paused *, .nphl-root.is-paused *::before { animation-play-state: paused !important; }
+.nphl-root.is-reduced * { animation-delay: -6s !important; animation-play-state: paused !important; }
