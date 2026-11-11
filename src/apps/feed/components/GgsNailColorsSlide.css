@@ -3,7 +3,7 @@
 .ggna-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 
 /* Nail layers share the cropped nail box measured on the 1440×1920 photo. */
-.ggna-nails{position:absolute;z-index:1;left:55.4167%;top:49.375%;width:38.6111%;height:30.9896%;isolation:isolate}
+.ggna-nails{position:absolute;z-index:1;left:55.2083%;top:49.2188%;width:39.0278%;height:31.3021%;isolation:isolate}
 .ggna-nails>*{position:absolute;inset:0;width:100%;height:100%;display:block}
 .ggna-paint{-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:ggna-paint var(--ggna-loop) linear infinite}
 .ggna-shade{mix-blend-mode:multiply}
