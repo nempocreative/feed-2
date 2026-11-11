@@ -1,7 +1,7 @@
-/* Hair recolour: lift (screen) brightens the strands, tint (color blend) sets the hue while keeping the real texture. */
+/* Hair recolour: lift (soft-light grey) lightens or deepens the strands, tint (color blend) sets the hue while keeping the real texture. */
 .ggmh-hair{position:absolute;inset:0;z-index:0;display:block;-webkit-mask-size:100% 100%;mask-size:100% 100%;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;animation:var(--ggmh-loop) linear infinite}
-.ggmh-lift{mix-blend-mode:screen;animation-name:ggmh-lift}
-.ggmh-tint{mix-blend-mode:color;opacity:.9;animation-name:ggmh-tint}
+.ggmh-lift{mix-blend-mode:soft-light;animation-name:ggmh-lift}
+.ggmh-tint{mix-blend-mode:color;opacity:.8;animation-name:ggmh-tint}
 .ggmh-floor{position:absolute;inset:0;z-index:1;background:var(--ggmh-floor);pointer-events:none}
 
 .ggmh-head{top:12cqw}

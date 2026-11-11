@@ -9,17 +9,17 @@ export const GGS_MEN_COLOURING_PROMO = {
 
 /**
  * Hair colours the slide-6 video cycles through. `hex` tints the hair (colour blend keeps the real strands),
- * `lift` brightens it first (screen blend) so light shades such as silver and blonde read as bleached hair.
+ * `lift` is a soft-light grey (above #808080 lightens, below darkens) so silver/blonde read bleached and burgundy stays deep.
  */
 export const GGS_MEN_HAIR_COLORS = [
-  { name: 'Ash Grey', hex: '#8d939c', lift: '#2e2e30' },
-  { name: 'Silver', hex: '#d6d9df', lift: '#6c6c72' },
-  { name: 'Golden Blonde', hex: '#d7a245', lift: '#563a12' },
-  { name: 'Caramel Brown', hex: '#9b6338', lift: '#120a04' },
-  { name: 'Copper', hex: '#c95a24', lift: '#2a1004' },
-  { name: 'Burgundy', hex: '#8a1c3a', lift: '#060002' },
-  { name: 'Ash Blue', hex: '#4d74a3', lift: '#0c1420' },
-  { name: 'Ash Purple', hex: '#7d5aa6', lift: '#140c22' },
+  { name: 'Ash Grey', hex: '#8a9099', lift: '#a8a8a8' },
+  { name: 'Silver', hex: '#d3d6dc', lift: '#d8d8d8' },
+  { name: 'Golden Blonde', hex: '#c99a4a', lift: '#b4b4b4' },
+  { name: 'Caramel Brown', hex: '#8e5e38', lift: '#7c7c7c' },
+  { name: 'Copper', hex: '#b8582a', lift: '#8a8a8a' },
+  { name: 'Burgundy', hex: '#7a2236', lift: '#4c4c4c' },
+  { name: 'Ash Blue', hex: '#56708f', lift: '#6c6c6c' },
+  { name: 'Ash Purple', hex: '#76609a', lift: '#707070' },
 ] as const;
 
 export const GGS_MEN_HAIR_COLOR_SECONDS = 1.6;
