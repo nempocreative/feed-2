@@ -1,18 +1,96 @@
 {
   "source": "github.com/nempocreative/feed",
   "capabilities": [
-    {"capability": "code", "source": "TanStack Start app with sub-apps NEMPO Feed (/nempo-feed), Tion Feed (/tion-feed), GGS Price List (/ggs-price-list)", "outcome": "migrate", "status": "in_progress", "next_action": "copy source tree"},
-    {"capability": "dependencies", "source": "package.json (same TanStack pins as target)", "outcome": "migrate", "status": "in_progress", "next_action": "install"},
-    {"capability": "uploaded file bytes", "source": "114 hosted media pointers owned by source project 63ff1ece", "outcome": "migrate", "status": "in_progress", "next_action": "re-upload to this project"},
-    {"capability": "committed media", "source": "images, videos, fonts, PDFs under src/assets and public/", "outcome": "migrate", "status": "in_progress", "next_action": "copy"},
-    {"capability": "schema", "source": "none detected", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "records", "source": "none detected", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "auth identities", "source": "none detected", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "authorization", "source": "none detected", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "external providers", "source": "none detected (no env vars beyond DEV)", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "public endpoints / webhooks / schedules", "source": "none detected", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "secrets", "source": "none required", "outcome": "not applicable", "status": "verified", "next_action": "none"},
-    {"capability": "cutover", "source": "new project URL", "outcome": "migrate", "status": "pending", "next_action": "publish when ready"},
-    {"capability": "verification", "source": "routes, tests, media", "outcome": "migrate", "status": "pending", "next_action": "run tests and preview checks"}
+    {
+      "capability": "code",
+      "source": "TanStack Start app with sub-apps NEMPO Feed (/nempo-feed), Tion Feed (/tion-feed), GGS Price List (/ggs-price-list)",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "dependencies",
+      "source": "package.json (same TanStack pins as target)",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "uploaded file bytes",
+      "source": "114 hosted media pointers re-uploaded from source project 63ff1ece to this project",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "committed media",
+      "source": "images, videos, fonts, PDFs under src/assets and public/",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "schema",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "records",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "auth identities",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "authorization",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "external providers",
+      "source": "none detected (no env vars beyond DEV)",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "public endpoints / webhooks / schedules",
+      "source": "none detected",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "secrets",
+      "source": "none required",
+      "outcome": "not applicable",
+      "status": "verified",
+      "next_action": "none"
+    },
+    {
+      "capability": "cutover",
+      "source": "new project URL",
+      "outcome": "migrate",
+      "status": "pending",
+      "next_action": "publish when ready"
+    },
+    {
+      "capability": "verification",
+      "source": "routes, tests, media",
+      "outcome": "migrate",
+      "status": "verified",
+      "next_action": "none"
+    }
   ]
 }
