@@ -1,0 +1,149 @@
+import { useLayoutEffect, useRef, type CSSProperties } from 'react';
+import { Clock3, Download, ImageDown, Printer, Scissors } from 'lucide-react';
+import background from '@/apps/ggs-price/assets/ggs-price-a4-background.jpg.asset.json';
+import { GGS_PRICE_CONTACT, GGS_PRICE_PAGES, type PricePage } from '@/apps/ggs-price/price-list';
+import png1 from '@/apps/ggs-price/assets/png/halaman-1.png.asset.json';
+import png2 from '@/apps/ggs-price/assets/png/halaman-2.png.asset.json';
+import png3 from '@/apps/ggs-price/assets/png/halaman-3.png.asset.json';
+import png4 from '@/apps/ggs-price/assets/png/halaman-4.png.asset.json';
+import png5 from '@/apps/ggs-price/assets/png/halaman-5.png.asset.json';
+import png6 from '@/apps/ggs-price/assets/png/halaman-6.png.asset.json';
+import png7 from '@/apps/ggs-price/assets/png/halaman-7.png.asset.json';
+import png8 from '@/apps/ggs-price/assets/png/halaman-8.png.asset.json';
+import pngZip from '@/apps/ggs-price/assets/png/semua-halaman.zip.asset.json';
+
+// Prebuilt 300 dpi A4 PNGs (2480 × 3508), one per page in GGS_PRICE_PAGES order.
+// Regenerate with scripts/export-ggs-price-png.py whenever the list changes.
+const PRINT_PNGS = [png1, png2, png3, png4, png5, png6, png7, png8];
+
+const PT = (n: number) => `calc(${n} * var(--pt))`;
+
+function A4Page({ page }: { page: PricePage }) {
+  const vars = {
+    '--top': PT(page.top),
+    '--w': PT(page.right - 60),
+    '--row': PT(page.rowHeight),
+    '--text': PT(page.textSize),
+    '--title': PT(page.titleSize),
+    '--label': PT(page.labelSize),
+  } as CSSProperties;
+  return (
+    <div className="ggpr-page">
+      <div className="ggpr-art" style={vars}>
+        <img className="ggpr-bg" src={background.url} alt="" draggable={false} />
+
+        <img className="ggpr-logo" src="/ggs-price-list/ggs-price-logo-round.png" alt="GGS Beauty" draggable={false} />
+
+        <div className="ggpr-tagline">
+          <strong>Grooming is better</strong>
+          <em>your style, your crown</em>
+        </div>
+
+        <div className="ggpr-list">
+          {page.sections.map((section, i) => (
+            <section key={i} className={`ggpr-section${section.title ? ' has-title' : ''}`}>
+              {section.title && (
+                <h2 className="ggpr-title">
+                  <Scissors className="ggpr-title-icon" aria-hidden />
+                  {section.title}
+                </h2>
+              )}
+              {section.subtitle && <h3 className="ggpr-subtitle">{section.subtitle}</h3>}
+              {section.items.map((item) => (
+                <div key={item.name} className={`ggpr-row${item.duration ? ' ggpr-row--bundle' : ''}`}>
+                  <span>
+                    <span className="ggpr-name">{item.name}</span>
+                    {item.duration && (
+                      <span className="ggpr-dur">
+                        <Clock3 strokeWidth={1.6} aria-hidden />
+                        {item.duration}
+                      </span>
+                    )}
+                  </span>
+                  <span className="ggpr-leader" aria-hidden />
+                  <span className="price">{item.price}</span>
+                </div>
+              ))}
+            </section>
+          ))}
+        </div>
+
+        <span className="ggpr-dot" aria-hidden />
+        <span className="ggpr-label">{page.label}</span>
+
+        <span className="ggpr-footer-text pill ig">{GGS_PRICE_CONTACT.instagram}</span>
+        <span className="ggpr-footer-text book">
+          BOOKING<em>NOW</em>
+        </span>
+        <span className="ggpr-footer-text pill wa">{GGS_PRICE_CONTACT.whatsapp}</span>
+      </div>
+    </div>
+  );
+}
+
+export default function App() {
+  const mainRef = useRef<HTMLElement>(null);
+
+  // Shrink text until every row on every page fits on one line, using one
+  // shared scale so all pages keep the exact same text size.
+  useLayoutEffect(() => {
+    const fit = () => {
+      const root = mainRef.current;
+      if (!root) return;
+      const rows = Array.from(root.querySelectorAll<HTMLElement>('.ggpr-row'));
+      const apply = (f: number) => root.style.setProperty('--fit', f.toFixed(2));
+      let f = 1;
+      apply(f);
+      while (f > 0.6 && rows.some((row) => row.scrollWidth > row.clientWidth + 1)) {
+        f -= 0.02;
+        apply(f);
+      }
+    };
+    fit();
+    document.fonts?.ready.then(fit);
+    const ro = new ResizeObserver(fit);
+    if (mainRef.current) ro.observe(mainRef.current);
+    return () => ro.disconnect();
+  }, []);
+
+  return (
+    <div className="ggpr-root">
+      <header className="ggpr-toolbar">
+        <div>
+          <h1>GGS Price List · A4 Cetak</h1>
+          <p>{GGS_PRICE_PAGES.length} halaman · 210 × 297 mm · tanpa margin</p>
+        </div>
+        <div className="ggpr-actions">
+          <a className="ggpr-btn ggpr-btn--ghost" href="/nempo-feed">
+            Kembali
+          </a>
+          <a className="ggpr-btn" href="/ggs-price-list/GGS-Price-List-A4-v2.pdf?v=20261109d" download="GGS-Price-List-A4.pdf">
+            <Download size={16} aria-hidden /> Download PDF
+          </a>
+          <a className="ggpr-btn" href={pngZip.url} download="GGS-Price-List-A4-PNG-300dpi.zip">
+            <ImageDown size={16} aria-hidden /> PNG Cetak (semua)
+          </a>
+          <button type="button" className="ggpr-btn" onClick={() => window.print()}>
+            <Printer size={16} aria-hidden /> Cetak
+          </button>
+        </div>
+      </header>
+
+      <main className="ggpr-pages" ref={mainRef}>
+        {GGS_PRICE_PAGES.map((page, i) => (
+          <div key={page.id} className="ggpr-page-wrap">
+            <div className="ggpr-page-no">
+              <span>Halaman {i + 1}</span>
+              {PRINT_PNGS[i] && (
+                <a className="ggpr-page-png" href={PRINT_PNGS[i].url} download={`GGS-Price-List-A4-Halaman-${i + 1}.png`}>
+                  <ImageDown size={13} aria-hidden /> PNG 300 dpi
+                </a>
+              )}
+            </div>
+            <A4Page page={page} />
+          </div>
+        ))}
+      </main>
+    </div>
+  );
+}

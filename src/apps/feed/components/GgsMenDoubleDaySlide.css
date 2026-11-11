@@ -1,0 +1,32 @@
+.ggm11-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--ggm11-cream);font-family:'DM Sans',sans-serif;color:var(--ggm11-ink)}
+.ggm11-bg{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover}
+.ggm11-halo{position:absolute;z-index:1;left:50%;top:44cqw;width:100cqw;height:62cqw;transform:translate(-50%,-50%);background:var(--ggm11-halo);pointer-events:none}
+
+.ggm11-head{position:absolute;z-index:2;left:0;right:0;top:19cqw;display:flex;flex-direction:column;align-items:center}
+.ggm11-kicker{margin:0;display:flex;align-items:center;gap:2.2cqw;font-size:3cqw;font-weight:700;letter-spacing:1.4cqw;text-transform:uppercase;color:var(--ggm11-brass-deep);padding-left:1.4cqw}
+.ggm11-kicker span{display:block;width:8cqw;height:.3cqw;background:var(--ggm11-brass)}
+.ggm11-date{margin:1.2cqw 0 0;display:flex;align-items:baseline;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 86;font-weight:800;font-size:30cqw;line-height:.84;letter-spacing:.4cqw;color:var(--ggm11-ink);text-shadow:var(--ggm11-date-shadow)}
+.ggm11-dot{margin:0 -.4cqw}
+.ggm11-tagline{margin:3.4cqw 0 0;font-family:'Playfair Display',serif;font-style:italic;font-weight:500;font-size:5cqw;line-height:1.1;color:var(--ggm11-ink)}
+.ggm11-tagline em{font-weight:700;color:var(--ggm11-brass-deep)}
+
+.ggm11-ribbon{position:absolute;z-index:2;left:8cqw;right:8cqw;top:67cqw;display:flex;align-items:center;justify-content:center;gap:4.4cqw;padding:2.6cqw 8cqw;background:var(--ggm11-ink);clip-path:polygon(0 0,100% 0,95.5% 50%,100% 100%,0 100%,4.5% 50%);filter:drop-shadow(0 1cqw 1.6cqw var(--ggm11-shadow))}
+.ggm11-seg{display:flex;align-items:center;gap:1.8cqw}
+.ggm11-pct{display:grid;place-items:center;width:6.6cqw;height:6.6cqw;border-radius:50%;background:var(--ggm11-brass);color:var(--ggm11-ink);font-weight:800;font-size:3.6cqw}
+.ggm11-disc,.ggm11-pack{margin:0;display:flex;flex-direction:column;line-height:1}
+.ggm11-disc small,.ggm11-pack small{font-size:2.2cqw;font-weight:700;letter-spacing:.35cqw;text-transform:uppercase;color:var(--ggm11-brass-light)}
+.ggm11-disc b{margin-top:.4cqw;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 90;font-weight:800;font-size:7.4cqw;letter-spacing:-.15cqw;color:var(--ggm11-white)}
+.ggm11-pack b{margin-top:.6cqw;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 90;font-weight:800;font-size:5cqw;letter-spacing:.05cqw;white-space:nowrap;text-transform:uppercase;color:var(--ggm11-white)}
+.ggm11-divider{align-self:stretch;width:0;border-left:.3cqw dashed var(--ggm11-brass)}
+
+.ggm11-items{position:absolute;z-index:2;left:9cqw;right:9cqw;bottom:16cqw;display:flex;flex-direction:column;align-items:center}
+.ggm11-items-label{position:relative;z-index:1;margin:0 0 -2cqw;padding:.9cqw 3.2cqw;border-radius:99cqw;background:var(--ggm11-brass);color:var(--ggm11-ink);font-size:2.2cqw;font-weight:800;letter-spacing:.35cqw;text-transform:uppercase;box-shadow:0 .6cqw 1.4cqw var(--ggm11-shadow)}
+.ggm11-cards{margin:0;padding:0;list-style:none;width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:2.4cqw}
+.ggm11-card{display:flex;flex-direction:column;align-items:center;gap:1.2cqw;padding:4.2cqw 1cqw 2.6cqw;border-radius:3cqw;background:var(--ggm11-card);border:.3cqw solid var(--ggm11-card-line);box-shadow:0 1.2cqw 2.8cqw var(--ggm11-shadow)}
+.ggm11-icon{display:grid;place-items:center;width:7cqw;height:7cqw;border-radius:50%;background:var(--ggm11-ink);color:var(--ggm11-brass-light)}
+.ggm11-icon svg{width:3.8cqw;height:3.8cqw}
+.ggm11-name{font-size:3cqw;font-weight:800;letter-spacing:.45cqw;text-transform:uppercase;color:var(--ggm11-ink)}
+.ggm11-location{margin:2.4cqw 0 0;display:flex;align-items:center;gap:1.2cqw;padding:1.3cqw 3.4cqw;border-radius:99cqw;background:var(--ggm11-ink);font-size:2.7cqw;font-weight:700;letter-spacing:.1cqw;white-space:nowrap;color:var(--ggm11-white);box-shadow:0 .8cqw 1.8cqw var(--ggm11-shadow)}
+.ggm11-location svg{width:3cqw;height:3cqw;flex:none;color:var(--ggm11-brass-light)}
+
+.ggm11-watermark{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:3;pointer-events:none}

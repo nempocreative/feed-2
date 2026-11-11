@@ -1,0 +1,33 @@
+.gg11-root{position:relative;isolation:isolate;width:100%;aspect-ratio:3/4;overflow:hidden;container-type:inline-size;background:var(--gg11-sky);font-family:'DM Sans',sans-serif;color:var(--gg11-ink)}
+.gg11-bg{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover}
+.gg11-halo{position:absolute;z-index:1;left:50%;top:40cqw;width:96cqw;height:56cqw;transform:translate(-50%,-50%);background:var(--gg11-halo);pointer-events:none}
+
+.gg11-head{position:absolute;z-index:2;left:0;right:0;top:20.5cqw;display:flex;flex-direction:column;align-items:center}
+.gg11-script{margin:0;font-family:'Yellowtail',cursive;font-size:8.6cqw;line-height:1;color:var(--gg11-pink-deep);transform:rotate(-4deg);text-shadow:var(--gg11-script-shadow)}
+.gg11-date{margin:-.6cqw 0 0;display:flex;align-items:baseline;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 88;font-weight:800;font-size:29cqw;line-height:.86;letter-spacing:.6cqw;color:var(--gg11-white);-webkit-text-stroke:.55cqw var(--gg11-pink);paint-order:stroke fill;text-shadow:var(--gg11-date-shadow)}
+.gg11-dot{margin:0 -.2cqw}
+
+.gg11-ribbon{position:absolute;z-index:2;left:7cqw;right:7cqw;top:59.5cqw;display:flex;align-items:center;justify-content:center;gap:4.4cqw;padding:2.4cqw 9cqw;background:var(--gg11-white);clip-path:polygon(0 0,100% 0,95% 50%,100% 100%,0 100%,5% 50%);transform:rotate(-2deg);filter:drop-shadow(0 1cqw 1.6cqw var(--gg11-shadow))}
+.gg11-seg{display:flex;align-items:center;gap:1.6cqw}
+.gg11-pct{display:grid;place-items:center;width:6.2cqw;height:6.2cqw;border-radius:50%;background:var(--gg11-pink);color:var(--gg11-white);font-weight:800;font-size:3.4cqw}
+.gg11-disc{margin:0;display:flex;flex-direction:column;line-height:1}
+.gg11-disc small{font-size:2.2cqw;font-weight:700;letter-spacing:.3cqw;text-transform:uppercase;color:var(--gg11-ink-soft)}
+.gg11-disc b{margin-top:.4cqw;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 90;font-weight:800;font-size:6.2cqw;letter-spacing:-.15cqw;white-space:nowrap;color:var(--gg11-ink)}
+.gg11-disc i{font-style:normal;margin:0 .5cqw;color:var(--gg11-pink)}
+.gg11-divider{align-self:stretch;width:0;border-left:.35cqw dashed var(--gg11-pink-soft)}
+.gg11-spark{width:5.6cqw;height:5.6cqw;color:var(--gg11-pink)}
+.gg11-scope{margin:0;display:flex;flex-direction:column;line-height:1;font-weight:800;color:var(--gg11-ink)}
+.gg11-scope span:first-child{font-size:2.6cqw;letter-spacing:.3cqw;text-transform:uppercase;color:var(--gg11-ink-soft)}
+.gg11-scope span:last-child{margin-top:.4cqw;font-family:'Bricolage Grotesque',sans-serif;font-size:4.6cqw}
+
+.gg11-prices{position:absolute;z-index:2;left:6cqw;right:6cqw;bottom:15cqw;display:flex;flex-direction:column;align-items:center}
+.gg11-prices-label{position:relative;z-index:1;margin:0 0 -2cqw;padding:.9cqw 3cqw;border-radius:99cqw;background:var(--gg11-pink-deep);color:var(--gg11-white);font-size:2.2cqw;font-weight:800;letter-spacing:.35cqw;text-transform:uppercase;box-shadow:0 .6cqw 1.4cqw var(--gg11-shadow)}
+.gg11-cards{margin:0;padding:0;list-style:none;width:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:2.4cqw}
+.gg11-card{display:flex;flex-direction:column;align-items:center;gap:.6cqw;padding:3.6cqw 1cqw 2.2cqw;border-radius:3.4cqw;background:var(--gg11-card);border:.3cqw solid var(--gg11-white);box-shadow:0 1.2cqw 2.8cqw var(--gg11-shadow)}
+.gg11-icon{display:grid;place-items:center;width:6cqw;height:6cqw;border-radius:50%;background:var(--gg11-pink-wash);color:var(--gg11-pink-deep)}
+.gg11-icon svg{width:3.6cqw;height:3.6cqw}
+.gg11-name{margin-top:.4cqw;font-size:2.3cqw;font-weight:800;letter-spacing:.4cqw;text-transform:uppercase;color:var(--gg11-ink-soft)}
+.gg11-price{display:flex;align-items:baseline;gap:.4cqw;font-family:'Bricolage Grotesque',sans-serif;font-variation-settings:'opsz' 96,'wdth' 90;font-weight:800;font-size:5.4cqw;line-height:1;letter-spacing:-.1cqw;color:var(--gg11-pink-deep)}
+.gg11-price small{font-family:'DM Sans',sans-serif;font-size:2.2cqw;font-weight:700;color:var(--gg11-ink)}
+
+.gg11-watermark{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;z-index:3;pointer-events:none}
