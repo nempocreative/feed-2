@@ -199,6 +199,11 @@
   --ggmp-brass-deep: #84602a;
   --ggmp-fade: linear-gradient(180deg, color-mix(in srgb, #f5eee2 80%, transparent) 0%, color-mix(in srgb, #f5eee2 60%, transparent) 22%, color-mix(in srgb, #f5eee2 0%, transparent) 33%, color-mix(in srgb, #f5eee2 0%, transparent) 100%);
   --ggmp-price-shadow: 0 1.2cqw 3.2cqw color-mix(in srgb, #1a1006 38%, transparent);
+  --ggmc-floor: linear-gradient(180deg, transparent 62%, color-mix(in srgb, #0c0a08 55%, transparent) 76%, color-mix(in srgb, #0c0a08 35%, transparent) 100%);
+  --ggmc-name-shadow: 0 .3cqw 1.6cqw color-mix(in srgb, #000000 70%, transparent);
+  --ggmc-chip-gloss: radial-gradient(circle at 32% 28%, color-mix(in srgb, #ffffff 55%, transparent) 0%, transparent 45%);
+  --ggmc-chip-off: 0 0 0 .2cqw color-mix(in srgb, #f5eee2 55%, transparent), 0 .4cqw 1cqw color-mix(in srgb, #000000 45%, transparent);
+  --ggmc-chip-on: 0 0 0 .4cqw #f5eee2, 0 0 0 .75cqw #b88a3e, 0 1cqw 2cqw color-mix(in srgb, #000000 55%, transparent);
 }
 
 .ggpi-root {
