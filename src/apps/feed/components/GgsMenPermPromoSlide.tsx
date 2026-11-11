@@ -1,5 +1,5 @@
 import type { RefObject } from 'react';
-import photo from '@/assets/ggs-men-perm-chair-v2.jpg';
+import photo from '@/assets/ggs-men-perm-chair-v3.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import { formatRupiah, GGS_MEN_PERM_PROMO } from './ggs-men-perm-promo';
 import './GgsMenPermPromoSlide.css';
