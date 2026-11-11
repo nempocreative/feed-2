@@ -1,10 +1,12 @@
 import type { CSSProperties, RefObject } from 'react';
-import photo from '@/assets/ggs-feed-33-cat-eye-glitter.jpg';
-import nailMask from '@/assets/ggs-feed-33-glitter-mask.png';
+import photoAsset from '@/assets/ggs-feed-33-cat-eye-glitter.jpg.asset.json';
+import maskAsset from '@/assets/ggs-feed-33-glitter-mask.png.asset.json';
 import ggsWatermark from '@/assets/ggs-header-footer-v2.png.asset.json';
 import { GGS_CAT_EYE_COLORS, GGS_CAT_EYE_COLOR_SECONDS, GGS_CAT_EYE_LOOP_SECONDS, GGS_CAT_EYE_PROMO } from './ggs-cat-eye';
 import './GgsCatEyeSlide.css';
 
+const photo = photoAsset.url;
+const nailMask = maskAsset.url;
 const N = GGS_CAT_EYE_COLORS.length;
 const HOLD = 0.72; // share of each step the color stays still; the rest is the fade to the next color
 const pct = (v: number) => `${((v / N) * 100).toFixed(3)}%`;
