@@ -3395,12 +3395,14 @@ function App() {
         )}
         {isGgsMen && ggsMenSlide === 6 && (
           <div className="mb-3">
+            <Button asChild>
             <PrebuiltPngDownload
               key="ggs-men-06"
               src={ggsMenColouringPng.url}
               fileName="GGS-Cowok-06-Promo-Colouring-200000.png"
               label="Download PNG"
             />
+            </Button>
           </div>
         )}
         {isGgsMen && ggsMenSlide === 1 && <div className="mb-3"><Button asChild><a href={ggsMenVideo.url} download="GGS-Cowok-Pilihan-Rambut.mp4"><Download className="h-4 w-4" aria-hidden="true" />Download video · MP4 1440×1920</a></Button></div>}
