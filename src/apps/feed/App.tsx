@@ -166,6 +166,8 @@ import { GgsNailLampSlide } from './components/GgsNailLampSlide';
 import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
 import ggsCatEyeVideo from '@/assets/ggs-feed-33-nail-art-cat-eye.mp4.asset.json';
 import ggsNailLampPng from '@/assets/ggs-feed-34-nail-art-35000.png.asset.json';
+import { GgsRedMahoganySlide } from './components/GgsRedMahoganySlide';
+import ggsRedMahoganyPng from '@/assets/ggs-feed-35-red-mahogany.png.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -237,7 +239,7 @@ type FeedSlide =
   | 44
   | 45;
 
-type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34;
+type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35;
 
 const cafes = [
   {
@@ -2837,6 +2839,10 @@ function ClientFeedArtwork({
     return <GgsNailLampSlide exportRef={exportRef} />;
   }
 
+  if (!isStory && slide === 35) {
+    return <GgsRedMahoganySlide exportRef={exportRef} />;
+  }
+
   if (!isStory && slide >= 13 && slide <= 18) {
     return <GgsServicesSlide exportRef={exportRef} data={GGS_SERVICES_SLIDES[slide - 13]!} />;
   }
@@ -3185,7 +3191,7 @@ function App() {
       : isGgsFeed
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
-        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34]
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
@@ -3447,6 +3453,18 @@ function App() {
                 <PrebuiltPngDownload
                   src={ggsNailLampPng.url}
                   fileName="GGS-Feed-34-Nail-Art-35000.png"
+                  label="Download PNG · 2×"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 2880×3840. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”; jika gambar terbuka, tekan lama lalu Simpan.
+                </p>
+              </>
+            ) : activeFeed === 'client' && activeClientSlide === 35 ? (
+              <>
+                <PrebuiltPngDownload
+                  src={ggsRedMahoganyPng.url}
+                  fileName="GGS-Feed-35-Red-Mahogany.png"
                   label="Download PNG · 2×"
                   className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
                 />

@@ -163,6 +163,14 @@
   --ggnl-glow: 0 0 2cqw var(--ggnl-paper), 0 0 .8cqw var(--ggnl-paper), 0 0 .3cqw var(--ggnl-paper);
   --ggnl-badge-ring: inset 0 0 0 1.3cqw var(--ggnl-primary), inset 0 0 0 1.6cqw var(--ggnl-gold), 0 0 0 .6cqw var(--ggnl-paper);
 }
+/* GGS Feed slide 35 (3:4): Red Mahogany title set directly on the client photo. */
+.ggrm-root {
+  --ggrm-ink: #1f0f0b;
+  --ggrm-cream: #fff4e8;
+  --ggrm-copper: #f0a585;
+  --ggrm-shade: linear-gradient(180deg, rgba(24, 10, 8, .5) 0%, rgba(24, 10, 8, .5) 14%, rgba(24, 10, 8, .42) 26%, rgba(24, 10, 8, 0) 40%);
+  --ggrm-glow: 0 .3cqw 1.2cqw rgba(20, 6, 4, .55), 0 0 3cqw rgba(20, 6, 4, .35);
+}
 .gg11-root {
   --gg11-sky: #bcd9f3;
   --gg11-white: #ffffff;
