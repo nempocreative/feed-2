@@ -165,6 +165,7 @@ import { GgsCatEyeSlide } from './components/GgsCatEyeSlide';
 import { GgsNailLampSlide } from './components/GgsNailLampSlide';
 import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
 import ggsCatEyeVideo from '@/assets/ggs-feed-33-nail-art-cat-eye.mp4.asset.json';
+import ggsNailLampPng from '@/assets/ggs-feed-34-nail-art-35000.png.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -3439,6 +3440,18 @@ function App() {
                 <PrebuiltVideoDownload src={ggsCatEyeVideo.url} fileName="GGS-Feed-33-Nail-Art-Cat-Eye.mp4" />
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
                   Video 11 detik · 1440×1920 · tanpa suara, persis seperti pratinjau.
+                </p>
+              </>
+            ) : activeFeed === 'client' && activeClientSlide === 34 ? (
+              <>
+                <PrebuiltPngDownload
+                  src={ggsNailLampPng.url}
+                  fileName="GGS-Feed-34-Nail-Art-35000.png"
+                  label="Download PNG · 2×"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 2880×3840. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”; jika gambar terbuka, tekan lama lalu Simpan.
                 </p>
               </>
             ) : activeFeed === 'client' && activeClientSlide === 27 ? (
