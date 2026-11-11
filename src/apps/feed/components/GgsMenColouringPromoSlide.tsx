@@ -33,10 +33,20 @@ const N = GGS_MEN_HAIR_COLORS.length;
 const HOLD = 0.72; // share of each colour's turn it stays still; the rest is the crossfade into the next photo
 const pct = (v: number) => `${((v / N) * 100).toFixed(3)}%`;
 
-// Each per-colour element shares these keyframes; its delay puts its turn at 0%. It fades out while the next fades in.
+const at = (v: number) => `${((v / N) * 100 + 0.001).toFixed(3)}%`; // just after v: an invisible snap under an opaque photo
+const fadeIn = pct(N - (1 - HOLD));
+
+// Every per-colour element's delay puts its own turn at 0%. Names and chips crossfade symmetrically.
+// Photos stack with lower index on top: the top photo fades out over the next one, which is already opaque underneath,
+// so the shop never washes out mid-change. The first photo fades in over the last one to close the loop.
 const keyframes =
-  `@keyframes ggmh-show{0%,${pct(HOLD)}{opacity:1}${pct(1)},${pct(N - (1 - HOLD))}{opacity:0}100%{opacity:1}}` +
-  `@keyframes ggmh-chip{0%,${pct(HOLD)}{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}${pct(1)},${pct(N - (1 - HOLD))}{transform:none;box-shadow:var(--ggmh-chip-off)}100%{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}}`;
+  `@keyframes ggmh-show{0%,${pct(HOLD)}{opacity:1}${pct(1)},${fadeIn}{opacity:0}100%{opacity:1}}` +
+  `@keyframes ggmh-photo{0%,${pct(HOLD)}{opacity:1}${pct(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
+  `@keyframes ggmh-photo-first{0%,${pct(HOLD)}{opacity:1}${pct(1)},${fadeIn}{opacity:0}100%{opacity:1}}` +
+  `@keyframes ggmh-photo-last{0%,${pct(1)}{opacity:1}${at(1)},${pct(N - 1)}{opacity:0}${at(N - 1)},100%{opacity:1}}` +
+  `@keyframes ggmh-chip{0%,${pct(HOLD)}{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}${pct(1)},${fadeIn}{transform:none;box-shadow:var(--ggmh-chip-off)}100%{transform:translateY(-.6cqw) scale(1.2);box-shadow:var(--ggmh-chip-on)}}`;
+
+const photoAnimation = (i: number) => (i === 0 ? 'ggmh-photo-first' : i === N - 1 ? 'ggmh-photo-last' : 'ggmh-photo');
 
 const delay = (i: number) => (i === 0 ? '0s' : `${-(GGS_MEN_HAIR_LOOP_SECONDS - i * GGS_MEN_HAIR_COLOR_SECONDS).toFixed(2)}s`);
 
@@ -50,7 +60,7 @@ export function GgsMenColouringPromoSlide({ exportRef }: { exportRef?: RefObject
       <div className="ggmh-photos" aria-hidden="true">
         {GGS_MEN_HAIR_COLORS.map((c, i) => (
           <img key={c.photo} className="ggmp-photo ggmh-photo" src={PHOTOS[c.photo]} width={1440} height={1920} alt=""
-            style={{ animationDelay: delay(i) }} />
+            style={{ animationName: photoAnimation(i), animationDelay: delay(i), zIndex: N - i }} />
         ))}
       </div>
       <span className="ggmp-fade" aria-hidden="true" />

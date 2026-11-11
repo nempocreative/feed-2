@@ -1,6 +1,6 @@
 /* One photo per hair colour, stacked and crossfaded; names and chips share the same timing. */
 .ggmh-photos{position:absolute;inset:0;z-index:0;background:var(--ggmp-paper)}
-.ggmh-photo{opacity:0;animation:ggmh-show var(--ggmh-loop) linear infinite}
+.ggmh-photo{opacity:0;animation-duration:var(--ggmh-loop);animation-timing-function:linear;animation-iteration-count:infinite}
 .ggmh-floor{position:absolute;inset:0;z-index:1;background:var(--ggmh-floor);pointer-events:none}
 
 .ggmh-head{top:12cqw}
