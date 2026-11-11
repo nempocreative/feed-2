@@ -16,7 +16,7 @@ export function GgsMenPermPromoSlide({ exportRef }: { exportRef?: RefObject<HTML
       role="img"
       aria-label={`GGS Barber Hairstudio — ${kicker} ${service}, ${subtitle}, ${formatRupiah(price)}`}
     >
-      <img className="ggmp-photo" src={photo} width={1080} height={1440} alt="" />
+      <img className="ggmp-photo" src={photo} width={1440} height={1920} alt="" />
       <span className="ggmp-fade" aria-hidden="true" />
 
       <section className="ggmp-head" aria-hidden="true">
