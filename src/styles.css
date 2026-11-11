@@ -123,6 +123,19 @@
   --ggkt-line: color-mix(in srgb, #3d0b2a 16%, transparent);
 }
 /* GGS Feed slide 30 (3:4): Hari Pahlawan "hari ini" reminder, night + flashlight palette. */
+/* GGS Feed slide 32 (3:4): plain nail colors promo palette. */
+.ggna-root {
+  --ggna-ink: #3d0b2a;
+  --ggna-ink-soft: #7a3a5c;
+  --ggna-paper: #fff5fa;
+  --ggna-primary: #c2185b;
+  --ggna-card: color-mix(in srgb, #ffffff 94%, transparent);
+  --ggna-card-shadow: 0 1.4cqw 3.6cqw color-mix(in srgb, #5a0f36 26%, transparent);
+  --ggna-fade: linear-gradient(180deg, color-mix(in srgb, #fff5fa 78%, transparent) 0%, color-mix(in srgb, #fff5fa 55%, transparent) 26%, transparent 38%), radial-gradient(ellipse 34% 10% at 22% 82%, color-mix(in srgb, #fff5fa 70%, transparent) 0%, transparent 100%);
+  --ggna-chip-off: 0 .35cqw .8cqw color-mix(in srgb, #5a0f36 22%, transparent), inset 0 0 0 .18cqw color-mix(in srgb, #ffffff 55%, transparent);
+  --ggna-chip-on: 0 0 0 .45cqw #ffffff, 0 0 0 .8cqw #c2185b, 0 1.2cqw 1.8cqw color-mix(in srgb, #5a0f36 32%, transparent);
+  --ggna-chip-gloss: linear-gradient(115deg, color-mix(in srgb, #ffffff 42%, transparent) 0%, color-mix(in srgb, #ffffff 0%, transparent) 38%);
+}
 .gg11-root {
   --gg11-sky: #bcd9f3;
   --gg11-white: #ffffff;
