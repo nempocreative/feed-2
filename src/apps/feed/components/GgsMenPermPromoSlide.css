@@ -7,7 +7,7 @@
 .ggmp-kicker{margin:0;display:flex;align-items:center;gap:2cqw;padding-left:.9cqw;font-size:2.3cqw;font-weight:600;letter-spacing:.9cqw !important;text-transform:uppercase;color:var(--ggmp-brass-deep)}
 .ggmp-kicker span{display:block;width:6cqw;height:.22cqw;background:var(--ggmp-brass)}
 .ggmp-title{margin:0;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:600;font-size:16cqw;line-height:1;color:var(--ggmp-ink)}
-.ggmp-sub{position:relative;margin:2cqw 0 0;padding-left:.7cqw;font-size:2cqw;font-weight:600;letter-spacing:.7cqw !important;text-transform:uppercase;color:var(--ggmp-ink-soft);text-shadow:0 0 1.2cqw color-mix(in srgb, var(--ggmp-paper) 80%, transparent)}
+.ggmp-sub{position:relative;margin:2cqw 0 0;padding-left:.7cqw;font-size:2cqw;font-weight:700;letter-spacing:.7cqw !important;text-transform:uppercase;color:var(--ggmp-ink);text-shadow:0 0 1.2cqw color-mix(in srgb, var(--ggmp-paper) 85%, transparent)}
 
 .ggmp-price{position:absolute;z-index:2;left:50%;bottom:16.5cqw;transform:translateX(-50%);display:flex;align-items:flex-start;gap:.8cqw;padding:2cqw 5.4cqw 2.4cqw;border-radius:99cqw;background:var(--ggmp-paper);border:.24cqw solid var(--ggmp-brass);box-shadow:var(--ggmp-price-shadow);white-space:nowrap}
 .ggmp-price-rp{margin-top:1.3cqw;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:4.4cqw;line-height:1;color:var(--ggmp-brass-deep)}
