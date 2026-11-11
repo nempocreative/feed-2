@@ -68,7 +68,7 @@ export function GgsNailColorsSlide({ exportRef }: { exportRef?: RefObject<HTMLEl
               className="ggna-chip"
               style={
                 {
-                  background: c.hex,
+                  backgroundColor: c.hex,
                   animationDelay: i === 0 ? '0s' : `${-(GGS_NAIL_LOOP_SECONDS - i * GGS_NAIL_COLOR_SECONDS)}s`,
                 } as CSSProperties
               }

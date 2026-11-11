@@ -157,6 +157,8 @@ import { GgsPedicureBeforeAfterSlide } from './components/GgsPedicureBeforeAfter
 import { GgsHairBeautySlide } from './components/GgsHairBeautySlide';
 import { GgsPahlawanReminderSlide } from './components/GgsPahlawanReminderSlide';
 import { GgsDoubleDaySlide } from './components/GgsDoubleDaySlide';
+import { GgsNailColorsSlide } from './components/GgsNailColorsSlide';
+import ggsNailColorsVideo from '@/assets/ggs-feed-32-nail-art-warna-polos.mp4.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -228,7 +230,7 @@ type FeedSlide =
   | 44
   | 45;
 
-type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31;
+type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32;
 
 const cafes = [
   {
@@ -2816,6 +2818,10 @@ function ClientFeedArtwork({
     return <GgsDoubleDaySlide exportRef={exportRef} />;
   }
 
+  if (!isStory && slide === 32) {
+    return <GgsNailColorsSlide exportRef={exportRef} />;
+  }
+
   if (!isStory && slide >= 13 && slide <= 18) {
     return <GgsServicesSlide exportRef={exportRef} data={GGS_SERVICES_SLIDES[slide - 13]!} />;
   }
@@ -3164,7 +3170,7 @@ function App() {
       : isGgsFeed
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
-        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
@@ -3388,6 +3394,13 @@ function App() {
                 </a>
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
                   Video 16 detik · 1080×1440 · 30 fps, persis seperti pratinjau.
+                </p>
+              </>
+            ) : activeFeed === 'client' && activeClientSlide === 32 ? (
+              <>
+                <PrebuiltVideoDownload src={ggsNailColorsVideo.url} fileName="GGS-Feed-32-Nail-Art-Warna-Polos.mp4" />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  Video 20 detik · 1440×1920 · tanpa suara, persis seperti pratinjau.
                 </p>
               </>
             ) : activeFeed === 'client' && activeClientSlide === 27 ? (
