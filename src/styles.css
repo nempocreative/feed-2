@@ -179,6 +179,14 @@
   --ggpov-shade: linear-gradient(180deg, rgba(20, 10, 10, .55) 0%, rgba(20, 10, 10, .52) 18%, rgba(20, 10, 10, .4) 30%, rgba(20, 10, 10, 0) 42%);
   --ggpov-glow: 0 .3cqw 1.2cqw rgba(16, 6, 6, .6), 0 0 3cqw rgba(16, 6, 6, .4);
 }
+/* GGS Feed slide 37 (3:4): Ratus price promo over the owner's smoking-burner photo. */
+.ggrt-root {
+  --ggrt-ink: #21170f;
+  --ggrt-cream: #fff7e9;
+  --ggrt-peach: #ffc09d;
+  --ggrt-shade: linear-gradient(180deg, rgba(22, 14, 9, .7) 0%, rgba(22, 14, 9, .62) 18%, rgba(22, 14, 9, .42) 31%, rgba(22, 14, 9, 0) 46%);
+  --ggrt-glow: 0 .3cqw 1.2cqw rgba(15, 8, 4, .72), 0 0 3cqw rgba(15, 8, 4, .48);
+}
 .gg11-root {
   --gg11-sky: #bcd9f3;
   --gg11-white: #ffffff;
