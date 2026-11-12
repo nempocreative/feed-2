@@ -1,19 +1,40 @@
 import type { RefObject } from 'react';
 import { Scissors } from 'lucide-react';
-import photo from '@/assets/ggs-men-burst-fade-arch-enhanced.jpg';
+import burstFadePhoto from '@/assets/ggs-men-burst-fade-arch-enhanced.jpg';
 import menOverlay from '@/assets/ggs-men-header-footer.png.asset.json';
 import './GgsMenCutCoverSlide.css';
 
 const SEAL_TEXT = 'Barber Hairstudio · Grooming is Better · ';
 
-/** GGS Cowok slide 4: elegant video cover naming the haircut (Burst Fade) — client photo in an arch window. */
-export function GgsMenCutCoverSlide({ exportRef }: { exportRef?: RefObject<HTMLElement | null> }) {
+type CutCoverProps = {
+  exportRef?: RefObject<HTMLElement | null>;
+  /** Big italic serif word of the haircut name. */
+  lead?: string;
+  /** Small spaced capitals word of the haircut name. */
+  tail?: string;
+  photo?: string;
+  photoWidth?: number;
+  photoHeight?: number;
+  /** CSS object-position for the arch photo. */
+  photoPosition?: string;
+};
+
+/** GGS Cowok cut cover (slides 4 and 7): elegant cover naming the haircut — client photo in an arch window. */
+export function GgsMenCutCoverSlide({
+  exportRef,
+  lead = 'Burst',
+  tail = 'Fade',
+  photo = burstFadePhoto,
+  photoWidth = 1488,
+  photoHeight = 1648,
+  photoPosition = '50% 34%',
+}: CutCoverProps) {
   return (
     <div
       ref={exportRef as RefObject<HTMLDivElement | null>}
       className="ggmc-root"
       role="img"
-      aria-label="GGS Barber Hairstudio — model rambut Burst Fade"
+      aria-label={`GGS Barber Hairstudio — model rambut ${lead} ${tail}`}
     >
       <span className="ggmc-glow" aria-hidden="true" />
 
@@ -24,14 +45,14 @@ export function GgsMenCutCoverSlide({ exportRef }: { exportRef?: RefObject<HTMLE
           <span />
         </p>
         <h2 className="ggmc-title">
-          <em>Burst</em>
-          <b>Fade</b>
+          <em>{lead}</em>
+          <b>{tail}</b>
         </h2>
       </section>
 
       <figure className="ggmc-arch" aria-hidden="true">
         <span className="ggmc-arch-line" />
-        <img className="ggmc-photo" src={photo} width={1488} height={1648} alt="" />
+        <img className="ggmc-photo" src={photo} width={photoWidth} height={photoHeight} alt="" style={{ objectPosition: photoPosition }} />
       </figure>
 
       <div className="ggmc-seal" aria-hidden="true">

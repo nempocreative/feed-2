@@ -54,6 +54,8 @@ import ggsMenContactPng from '@/assets/ggs-cowok-02-customer-service.png.asset.j
 import ggsMenDoubleDayPng from '@/assets/ggs-men-03-diskon-1111.png.asset.json';
 import ggsMenBurstFadePng from '@/assets/ggs-men-04-burst-fade-cover.png.asset.json';
 import ggsMenPermPng from '@/assets/ggs-men-05-perm-175000.png.asset.json';
+import ggsMenTwoBlockPhoto from '@/assets/ggs-men-two-block-arch.jpg.asset.json';
+import ggsMenTwoBlockPng from '@/assets/ggs-men-07-two-block-cover.png.asset.json';
 import ggsMenColouringVideo from '@/assets/ggs-cowok-06-colouring-warna-rambut.mp4.asset.json';
 import {
   FaFileExcel,
@@ -2877,7 +2879,7 @@ function App() {
   >('nempo');
   const [activeSlide, setActiveSlide] = useState<FeedSlide>(32);
   const [activeClientSlide, setActiveClientSlide] = useState<ClientSlide>(3);
-  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2 | 3 | 4 | 5 | 6>(1);
+  const [ggsMenSlide, setGgsMenSlide] = useState<1 | 2 | 3 | 4 | 5 | 6 | 7>(1);
   const [isDownloading, setIsDownloading] = useState(false);
   const [preparedNempoPng, setPreparedNempoPng] = useState<{
     url: string;
@@ -3393,6 +3395,18 @@ function App() {
             <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
           </div>
         )}
+        {isGgsMen && ggsMenSlide === 7 && (
+          <div className="mb-3 flex flex-col items-center gap-2">
+            <PrebuiltPngDownload
+              key="ggs-men-07"
+              src={ggsMenTwoBlockPng.url}
+              fileName="GGS-Cowok-07-Cover-Two-Block.png"
+              label="Download PNG"
+              className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+            />
+            <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">PNG 1440×1920, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.</p>
+          </div>
+        )}
         {isGgsMen && ggsMenSlide === 5 && (
           <div className="mb-3 flex flex-col items-center gap-2">
             <PrebuiltPngDownload
@@ -3724,7 +3738,7 @@ function App() {
         ) : isCalendar ? (
           <Ggs2027Calendar exportRef={exportRef} />
         ) : isGgsMen ? (
-          ggsMenSlide === 6 ? <GgsMenColouringPromoSlide exportRef={exportRef} /> : ggsMenSlide === 5 ? <GgsMenPermPromoSlide exportRef={exportRef} /> : ggsMenSlide === 4 ? <GgsMenCutCoverSlide exportRef={exportRef} /> : ggsMenSlide === 3 ? <GgsMenDoubleDaySlide exportRef={exportRef} /> : ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
+          ggsMenSlide === 7 ? <GgsMenCutCoverSlide exportRef={exportRef} lead="Two" tail="Block" photo={ggsMenTwoBlockPhoto.url} photoWidth={1478} photoHeight={1504} photoPosition="50% 30%" /> : ggsMenSlide === 6 ? <GgsMenColouringPromoSlide exportRef={exportRef} /> : ggsMenSlide === 5 ? <GgsMenPermPromoSlide exportRef={exportRef} /> : ggsMenSlide === 4 ? <GgsMenCutCoverSlide exportRef={exportRef} /> : ggsMenSlide === 3 ? <GgsMenDoubleDaySlide exportRef={exportRef} /> : ggsMenSlide === 2 ? <GgsMenContactSlide exportRef={exportRef} /> : <GgsMenHairCardsSlide exportRef={exportRef} />
         ) : isGgsFeed ? (
           <ClientFeedArtwork
             exportRef={exportRef}
@@ -3750,14 +3764,14 @@ function App() {
         )}
         {isGgsMen && (
           <div className="mt-4 flex items-center gap-1 rounded-full bg-[#062f4d] p-1 shadow-[0_8px_20px_rgba(0,40,78,0.2)]" aria-label="Pilih slide GGS Cowok">
-            {([1, 2, 3, 4, 5, 6] as const).map((slide) => (
+            {([1, 2, 3, 4, 5, 6, 7] as const).map((slide) => (
               <Button variant={ggsMenSlide === slide ? 'default' : 'ghost'} size="sm"
                 key={slide}
                 type="button"
                 aria-label={`Tampilkan slide ${String(slide).padStart(2, '0')}`}
                 aria-pressed={ggsMenSlide === slide}
                 onClick={() => setGgsMenSlide(slide)}
-                className="h-7 rounded-full px-3 py-1 text-[10px] font-black"
+                className={`h-7 rounded-full px-3 py-1 text-[10px] font-black ${ggsMenSlide === slide ? 'bg-[#ffdd00] text-[#062f4d] hover:bg-[#ffdd00]' : 'text-white/75 hover:bg-transparent hover:text-white'}`}
               >
                 {String(slide).padStart(2, '0')}
               </Button>
