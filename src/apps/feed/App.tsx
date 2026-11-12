@@ -171,6 +171,7 @@ import ggsNailLampPng from '@/assets/ggs-feed-34-nail-art-35000.png.asset.json';
 import { GgsRedMahoganySlide } from './components/GgsRedMahoganySlide';
 import ggsRedMahoganyPng from '@/assets/ggs-feed-35-red-mahogany.png.asset.json';
 import { GgsPovJudesSlide } from './components/GgsPovJudesSlide';
+import ggsPovJudesPng from '@/assets/ggs-feed-36-pov-customer-judes.png.asset.json';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -3496,6 +3497,18 @@ function App() {
                 <PrebuiltVideoDownload src={ggsPahlawanPromoVideo.url} fileName="GGS-Feed-27-Promo-Hari-Pahlawan.mp4" />
                 <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
                   Video 15 detik · 1440×1920 · tanpa suara, persis seperti pratinjau.
+                </p>
+              </>
+            ) : activeFeed === 'client' && activeClientSlide === 36 ? (
+              <>
+                <PrebuiltPngDownload
+                  src={ggsPovJudesPng.url}
+                  fileName="GGS-Feed-36-POV-Customer-Judes.png"
+                  label="Download PNG · 2×"
+                  className="inline-flex items-center gap-2 rounded-full bg-[#062f4d] px-4 py-2 text-[11px] font-black text-white shadow-[0_8px_20px_rgba(0,40,78,0.2)] transition-colors hover:bg-[#0b4d69] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#ffdd00] focus-visible:ring-offset-2"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 2880×3840. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”; jika gambar terbuka, tekan lama lalu Simpan.
                 </p>
               </>
             ) : activeFeed === 'client' && (activeClientSlide === 21 || activeClientSlide === 22 || activeClientSlide === 23) ? (
