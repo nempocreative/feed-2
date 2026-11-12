@@ -170,6 +170,7 @@ import ggsCatEyeVideo from '@/assets/ggs-feed-33-nail-art-cat-eye.mp4.asset.json
 import ggsNailLampPng from '@/assets/ggs-feed-34-nail-art-35000.png.asset.json';
 import { GgsRedMahoganySlide } from './components/GgsRedMahoganySlide';
 import ggsRedMahoganyPng from '@/assets/ggs-feed-35-red-mahogany.png.asset.json';
+import { GgsPovJudesSlide } from './components/GgsPovJudesSlide';
 import { GgsServicesSlide, GGS_SERVICES_SLIDES } from './components/GgsServicesSlide';
 import { GgsRatusPromoSlide } from './components/GgsRatusPromoSlide';
 import { KalaMudaRecruitSlide } from './components/KalaMudaRecruitSlide';
@@ -241,7 +242,7 @@ type FeedSlide =
   | 44
   | 45;
 
-type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35;
+type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36;
 
 const cafes = [
   {
@@ -2845,6 +2846,10 @@ function ClientFeedArtwork({
     return <GgsRedMahoganySlide exportRef={exportRef} />;
   }
 
+  if (!isStory && slide === 36) {
+    return <GgsPovJudesSlide exportRef={exportRef} />;
+  }
+
   if (!isStory && slide >= 13 && slide <= 18) {
     return <GgsServicesSlide exportRef={exportRef} data={GGS_SERVICES_SLIDES[slide - 13]!} />;
   }
@@ -3193,7 +3198,7 @@ function App() {
       : isGgsFeed
       ? isGgsStory
         ? [1, 2, 3, 4, 5]
-        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35]
+        : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]
       : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;

@@ -171,6 +171,14 @@
   --ggrm-shade: linear-gradient(180deg, rgba(24, 10, 8, .5) 0%, rgba(24, 10, 8, .5) 14%, rgba(24, 10, 8, .42) 26%, rgba(24, 10, 8, 0) 40%);
   --ggrm-glow: 0 .3cqw 1.2cqw rgba(20, 6, 4, .55), 0 0 3cqw rgba(20, 6, 4, .35);
 }
+/* GGS Feed slide 36 (3:4): "POV: dapat customer judes" set directly on the salon photo. */
+.ggpov-root {
+  --ggpov-ink: #1c1210;
+  --ggpov-cream: #fff6ee;
+  --ggpov-rose: #ffb3c4;
+  --ggpov-shade: linear-gradient(180deg, rgba(20, 10, 10, .55) 0%, rgba(20, 10, 10, .52) 18%, rgba(20, 10, 10, .4) 30%, rgba(20, 10, 10, 0) 42%);
+  --ggpov-glow: 0 .3cqw 1.2cqw rgba(16, 6, 6, .6), 0 0 3cqw rgba(16, 6, 6, .4);
+}
 .gg11-root {
   --gg11-sky: #bcd9f3;
   --gg11-white: #ffffff;
